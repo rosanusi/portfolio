@@ -33,7 +33,9 @@ const IndexPage = () => (
 
     <Music />
 
-    <Nav className='rdwn-footer_floated' />
+    <footer>
+      <span>© Ridwan 'Busola Sanusi. 2019 • It's all good.</span>
+    </footer>
 
 
 
