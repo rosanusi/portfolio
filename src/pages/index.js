@@ -18,7 +18,7 @@ const IndexPage = () => (
 
     <Hero />
 
-    <Nav className='rdwn-header_floated'/>
+    <Nav />
 
     <Currently />
 
@@ -32,10 +32,6 @@ const IndexPage = () => (
     <Books />
 
     <Music />
-
-    <footer>
-      <span>© Ridwan 'Busola Sanusi. 2019 • It's all good.</span>
-    </footer>
 
 
 

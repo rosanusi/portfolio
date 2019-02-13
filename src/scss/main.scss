@@ -235,6 +235,8 @@ html, body {
         }
        
         li {
+            -webkit-backface-visibility: hidden;
+            will-change: transform;
             transition: transform .2s ease-in;
 
             a {
@@ -379,7 +381,7 @@ html, body {
         .small-title {
             margin-bottom : 1em;
             display: block;
-            font-size: 1em;
+            font-size: 1.3em;
             line-height:  1.3;
         }
 
@@ -446,6 +448,8 @@ html, body {
                 font-family: $display-font;
                 color : $display-color;
                 margin-bottom : 8px;
+                -webkit-backface-visibility: hidden;
+                will-change: transform;
                 transition: all .3s ease;
 
 
@@ -484,6 +488,8 @@ html, body {
         line-height: 0;
 
         li {
+            -webkit-backface-visibility: hidden;
+            will-change: transform;
             transition: transform .2s ease-in;
 
             a {
@@ -530,6 +536,8 @@ html, body {
         line-height: 0;
 
         li {
+            -webkit-backface-visibility: hidden;
+            will-change: transform;
             transition: transform .2s ease-in;
 
             a {
@@ -559,4 +567,5 @@ footer {
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: center;
+    margin-bottom : 3em;
 }

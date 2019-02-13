@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Nav from '../components/nav'
+import LazyLoad from 'react-lazy-load';
+
 
 import SwiffixMain from '../images/works/swiffix/main.jpg';
 import LandingPage from '../images/works/swiffix/landingpage.jpg';
@@ -24,7 +26,9 @@ const Swiffix = () => (
         <small>Connecting people with verified professional handymen</small>
     </div>
     <div className="workImage">
-        <img src={SwiffixMain} alt="" />
+        <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={SwiffixMain} alt="" />
+            </LazyLoad>
     </div>
     <div className="rdwn-works-overview">
 
@@ -46,12 +50,16 @@ help the founding team design the minimum viable product.</p>
     <div className="rdwn-content">
 
         <div className="workImage">
-            <img src={LandingPage} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={LandingPage} alt="" />
+            </LazyLoad>
         </div>
 
 
         <div className="workImage">
-            <img src={Wireframes} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={Wireframes} alt="" />
+            </LazyLoad>
         </div>
 
 
@@ -61,7 +69,9 @@ help the founding team design the minimum viable product.</p>
         </div>
 
         <div className="workImage">
-            <img src={More1} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More1} alt="" />
+            </LazyLoad>
         </div>
 
 
@@ -73,11 +83,15 @@ help the founding team design the minimum viable product.</p>
         </div>
 
         <div className="workImage">
-            <img src={More2} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More2} alt="" />
+            </LazyLoad>
         </div>
 
         <div className="workImage">
-            <img src={More3} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More3} alt="" />
+            </LazyLoad>
         </div>
         
     </div>

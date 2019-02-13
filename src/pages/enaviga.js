@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Nav from '../components/nav'
+import LazyLoad from 'react-lazy-load';
+
 
 import EnavigaMain from '../images/works/enaviga/main.jpg';
 import Featured from '../images/works/enaviga/featured.jpg';
@@ -23,7 +25,9 @@ const Enaviga = () => (
         <small>A Boat Rental Platform based in Belgium</small>
     </div>
     <div className="workImage">
-        <img src={Featured} alt="" />
+        <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={Featured} alt="" />
+            </LazyLoad>
     </div>
     <div className="rdwn-works-overview">
 
@@ -45,7 +49,9 @@ app to facilitate adding boat for rent online easily.</p>
     <div className="rdwn-content">
 
         <div className="workImage">
-            <img src={Pages} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={Pages} alt="" />
+            </LazyLoad>
         </div>
 
 
@@ -58,11 +64,15 @@ app to facilitate adding boat for rent online easily.</p>
         </div>
 
         <div className="workImage">
-            <img src={Flows} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={Flows} alt="" />
+            </LazyLoad>
         </div>
 
         <div className="workImage">
-            <img src={More1} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More1} alt="" />
+            </LazyLoad>
         </div>
         
     </div>

@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Nav from '../components/nav'
+import LazyLoad from 'react-lazy-load';
+
 
 import icflixMain from '../images/works/icflix/main.jpg';
 import icflixFeature from '../images/works/icflix/feature.jpg';
@@ -27,7 +29,9 @@ const Icflix = () => (
         <small>Middle East Movie streaming platform</small>
     </div>
     <div className="workImage">
-        <img src={icflixMain} alt="" />
+        <LazyLoad debounce={false}offsetVertical={500}>
+            <img src={icflixMain} alt="" />
+        </LazyLoad>
     </div>
     <div className="rdwn-works-overview">
 
@@ -48,11 +52,16 @@ const Icflix = () => (
     <div className="rdwn-content">
 
         <div className="workImage">
-            <img src={icflixFeature} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={icflixFeature} alt="" />
+            </LazyLoad>
+
         </div>
 
         <div className="workImage">
-            <img src={Tv} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={Tv} alt="" />
+            </LazyLoad>
         </div>
 
         <div className="midway">
@@ -62,22 +71,30 @@ const Icflix = () => (
 
 
         <div className="workImage">
-            <img src={More1} alt="" />
+
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More1} alt="" />
+            </LazyLoad>
         </div>
 
 
         <div className="midway">
-            <p>Creating a products across multiple channels simultaneous is very daunting and risk ending up 
+            <p>Creating a products across multiple channels simultaneously is very daunting and risk ending up 
                 disastrous if not managed properly.</p>
                 
             <p>In order to mitigate this risk, I created a common product 
                 requirement document which attempted to answer basic functionality questions of all the features 
                 of the product designed. This helped maintain feature parity across platforms and helped steer the 
-                product development with one accord.</p>
+                product development in one direction.</p>
         </div>
 
         <div className="workImage">
-            <img src={More2} alt="" />
+
+
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More2} alt="" />
+            </LazyLoad>
+
         </div>
 
 
@@ -85,20 +102,24 @@ const Icflix = () => (
         <div className="midway">
             <span className="small-title">Challenges in account creation and payment system</span>
             <p>Throughout the middle east, different countries have different regulations regarding payment.
-                As a result of this differernces, we had make our payment system flexible enough to allow even customers from 
-                the lowest denominator country pay for the service easily. We spoke to customers from some othe more difficult 
-                countries to understand their behaviour when it comes to payment and created solutions to try.</p>
+                As a result of this differences, we had to make our payment system flexible enough to allow even customers from 
+                the lowest denominator country pay for the service easily. We spoke to customers from some other more difficult 
+                countries to understand their behaviour when it comes to payment and created solutions that works for them.</p>
 
-            <p>After the research, I created the account creation task flow with focus on making sure most of the customers were able to make payment easily without friction.
+            <p>After the research, I created the account management task flow with focus on making sure most of the customers were able to make payment easily with their preferred payment method without friction.
             </p>
         </div>
 
         <div className="workImage">
-            <img src={More3} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More3} alt="" />
+            </LazyLoad>
         </div>
 
         <div className="workImage">
-            <img src={More6} alt="" />
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More6} alt="" />
+            </LazyLoad>
         </div>
 
 
@@ -110,7 +131,9 @@ const Icflix = () => (
         </div>
 
         <div className="workImage">
-            <img src={More4} alt="" /> 
+            <LazyLoad debounce={false}offsetVertical={500}>
+                <img src={More4} alt="" />
+            </LazyLoad>
         </div>
 
         
