@@ -175,6 +175,21 @@ html, body {
 }
 
 
+.rdwn-footer_floated {
+    display : flex;
+    flex-flow : row;
+    margin-top: 8em;
+    
+    display: none;
+
+    @media (max-width: 767px) { 
+        display: block;   
+        margin-top : 4em;
+    }
+}
+
+
+
 .section-title {
     font-size: 1.2em;
     font-family: $display-font;

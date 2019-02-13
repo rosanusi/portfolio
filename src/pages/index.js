@@ -18,7 +18,7 @@ const IndexPage = () => (
 
     <Hero />
 
-    <Nav />
+    <Nav className='rdwn-header_floated'/>
 
     <Currently />
 
@@ -32,6 +32,8 @@ const IndexPage = () => (
     <Books />
 
     <Music />
+
+    <Nav className='rdwn-footer_floated' />
 
 
 

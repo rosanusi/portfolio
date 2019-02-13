@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 export default class nav extends Component {
   render() {
     return (
-    <div className="rdwn-header_floated">
+    <div className={this.props.className}>
       
         <div className="rdwn-name">
           <h2 className="title"><Link to="/">Busola Sanusi</Link></h2>
