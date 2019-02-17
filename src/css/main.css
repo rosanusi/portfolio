@@ -195,29 +195,29 @@ html, body {
       .rdwn-works .rdwn-works-grid {
         grid-template-columns: repeat(1, auto);
         grid-template-rows: repeat(4, auto); } }
-    .rdwn-works .rdwn-works-grid li {
-      -webkit-backface-visibility: hidden;
-      will-change: transform;
-      transition: transform .2s ease-in; }
-      .rdwn-works .rdwn-works-grid li a {
-        display: block;
+    .rdwn-works .rdwn-works-grid li a {
+      display: block;
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      max-height: 380px; }
+      .rdwn-works .rdwn-works-grid li a img {
         position: relative;
-        overflow: hidden;
-        border-radius: 12px; }
-        .rdwn-works .rdwn-works-grid li a img {
-          position: relative;
-          width: 100%; }
-      .rdwn-works .rdwn-works-grid li .details {
-        margin-top: 1em;
-        line-height: 1.5; }
-        .rdwn-works .rdwn-works-grid li .details .rdwn-work-title {
-          font-family: "Gordita Medium";
-          display: block;
-          font-size: 1.2em; }
-        .rdwn-works .rdwn-works-grid li .details .rdwn-work-details {
-          display: block; }
-      .rdwn-works .rdwn-works-grid li:hover {
-        transform: translateY(-3px); }
+        width: 100%;
+        -webkit-backface-visibility: hidden;
+        will-change: transform;
+        transition: transform .2s ease-in; }
+        .rdwn-works .rdwn-works-grid li a img:hover {
+          transform: scale(1.05); }
+    .rdwn-works .rdwn-works-grid li .details {
+      margin-top: 1em;
+      line-height: 1.5; }
+      .rdwn-works .rdwn-works-grid li .details .rdwn-work-title {
+        font-family: "Gordita Medium";
+        display: block;
+        font-size: 1.2em; }
+      .rdwn-works .rdwn-works-grid li .details .rdwn-work-details {
+        display: block; }
 
 .rdwn-works-header {
   text-align: center;

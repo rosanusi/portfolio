@@ -235,19 +235,24 @@ html, body {
         }
        
         li {
-            -webkit-backface-visibility: hidden;
-            will-change: transform;
-            transition: transform .2s ease-in;
 
             a {
                 display: block;
                 position: relative;
                 overflow: hidden;
                 border-radius : 12px;
+                max-height: 380px;
 
                 img {
                     position: relative;
-                    width: 100%;
+                    width: 100%; 
+                    -webkit-backface-visibility: hidden;
+                    will-change: transform;
+                    transition: transform .2s ease-in;
+
+                    &:hover {
+                        transform: scale(1.050);
+                    }
                 }
             }
 
@@ -265,10 +270,6 @@ html, body {
                 .rdwn-work-details{
                     display: block;
                 }
-            }
-
-            &:hover {
-                transform: translateY(-3px);
             }
         }
     }
@@ -502,6 +503,13 @@ html, body {
                 img {
                     position: relative;
                     width: 100%;
+                    -webkit-backface-visibility: hidden;
+                    will-change: transform;
+                    transition: transform .2s ease-in;
+
+                    &:hover {
+                        transform: scale(1.050);
+                    }
                 }
             }
 
@@ -550,6 +558,13 @@ html, body {
                 img {
                     position: relative;
                     width: 100%;
+                    -webkit-backface-visibility: hidden;
+                    will-change: transform;
+                    transition: transform .2s ease-in;
+
+                    &:hover {
+                        transform: scale(1.050);
+                    }
                 }
 
             }
