@@ -18,7 +18,7 @@ const Playground = () => (
 
     <div className="rdwn-works-header">
         <h1 className="title">Playground</h1>
-        <small>I sometimes randomly design UIs just to keep the creative juice flowing. Sometimes, there are ideas behind them.</small>
+        <small>I sometimes randomly design UIs just to keep the creative juice flowing. Some of those times, there are actual ideas behind them.</small>
     </div>
 
     <div className="rdwn-content">
@@ -31,7 +31,7 @@ const Playground = () => (
 
         <div className="midway">
             <span className="small-title">Insurance Form idea</span>
-            <p>I was tryign to compare the insurance policies for my wife and I and realzied how bad the compare website's form was. I thought to myself what if they made this so simple that you can even do it on the mobile. So I designed this to see how the flow is.</p>
+            <p>I was trying to compare the insurance policies for my wife and I and realized how bad the compare website's form was. I thought to myself what if they made this so simple that you could even do it on the mobile. So I designed this to see how the flow works.</p>
         </div>
         
 
@@ -45,8 +45,8 @@ const Playground = () => (
         <div className="midway">
             <span className="small-title">An idea for simple location manager</span>
             <p>When I just relocated to Amsterdam, I did alot of biking and walking around. 
-                I would find very cool places and send the location to my wife via whatsapp with "Ignore". 
-                I thought the feature to manage on google maps is very hidden and should make an app that focuses on that. </p>
+                I would find very cool places and send the location to my wife via whatsapp with "Ignore" message so as to save the location. 
+                I thought the feature to manage location on google maps is very hidden and should make an app that does just that. </p>
         </div>
         
 
@@ -58,13 +58,13 @@ const Playground = () => (
 
         <div className="midway">
             <span className="small-title">An idea in shared listening Experience</span>
-            <p>Back in University, my friends and i would go hours jsut putting one another on new music, 
-                unknown artsits, unrelease music from not so popular artists. I thought it will really be cool to hear what 
+            <p>Back in University, my friends and i would go hours just putting one another on new music, 
+                unknown artsits, not-so-popular music from not so popular artists. I thought it will really be cool to hear what 
                 people you follow online are listening to. Not like the "#np artist - song" but actually listen to what they are listening to.
                 Like a peer-2-peer radio station where you can tune in to anyone's stream if they allow you to listen.
             </p>
 
-            <p>This obviously had a lot of legal issues written over it, so I just designed some UI for fun of it.</p>
+            <p>This obviously had a lot of legal issues written all over it, so I just designed some UI for the fun of it.</p>
 
         </div>
 
