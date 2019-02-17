@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -7,7 +6,6 @@ import Nav from '../components/nav'
 import LazyLoad from 'react-lazy-load';
 
 
-import EnavigaMain from '../images/works/enaviga/main.jpg';
 import Featured from '../images/works/enaviga/featured.jpg';
 import Flows from '../images/works/enaviga/flows.jpg';
 import Pages from '../images/works/enaviga/pages.jpg';

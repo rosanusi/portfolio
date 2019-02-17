@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
@@ -13,7 +12,6 @@ import More1 from '../images/works/icflix/more1.jpg';
 import More2 from '../images/works/icflix/more2.jpg';
 import More3 from '../images/works/icflix/more3.jpg';
 import More4 from '../images/works/icflix/more4.jpg';
-import More5 from '../images/works/icflix/more5.jpg';
 import More6 from '../images/works/icflix/more6.jpg';
 import Tv from '../images/works/icflix/tv.jpg';
 

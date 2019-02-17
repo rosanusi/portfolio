@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 
 export default class github extends Component {
   render() {
@@ -11,15 +10,15 @@ export default class github extends Component {
     
             <ul className="rdwn-github-projects">
                 <li>
-                    <a href="https://github.com/rosanusi/project_journal">Project Journal</a>
+                    <a href="https://github.com/rosanusi/project_journal" target="_blank" rel="noopener noreferrer">Project Journal</a>
                     <p>Putting Kanban &amp; note taking features together in one place.</p>
                 </li>
                 <li>
-                    <a href="https://github.com/rosanusi/notes">Notes App</a>
+                    <a href="https://github.com/rosanusi/notes" target="_blank" rel="noopener noreferrer">Notes App</a>
                     <p>Dead simple note taking chrome extension made in reactjs</p>
                 </li>
                 <li>
-                    <a href="https://github.com/rosanusi/watchbox">Watchbox</a>
+                    <a href="https://github.com/rosanusi/watchbox" target="_blank" rel="noopener noreferrer">Watchbox</a>
                     <p>Simple react app to search for movies to watch</p>
                 </li>
             </ul>

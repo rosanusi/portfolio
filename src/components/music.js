@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 
 import Madvillian from '../images/music/madvillian.jpg';
 import Portishead from '../images/music/portishead.jpg';
@@ -16,22 +15,22 @@ export default class music extends Component {
 
         <ul className="rdwn-music-grid">
           <li>
-            <a href="https://open.spotify.com/album/67Yc6dfTWwuPceZRK7sluD" target="_blank">
+            <a href="https://open.spotify.com/album/67Yc6dfTWwuPceZRK7sluD" rel="noopener noreferrer" target="_blank">
                 <img src={Madvillian} alt="" />
             </a>
           </li>
           <li>
-            <a href="https://open.spotify.com/album/3539EbNgIdEDGBKkUf4wno" target="_blank">
+            <a href="https://open.spotify.com/album/3539EbNgIdEDGBKkUf4wno" rel="noopener noreferrer" target="_blank">
               <img src={Portishead} alt="" />
             </a>
           </li>
           <li>
-            <a href="https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i" target="_blank">
+            <a href="https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i" rel="noopener noreferrer" target="_blank">
               <img src={Sweatshirt} alt="" />
             </a>
           </li>
           <li>
-            <a href="https://open.spotify.com/album/5MWhs2N3eO78ppIYmRUzmH" target="_blank">
+            <a href="https://open.spotify.com/album/5MWhs2N3eO78ppIYmRUzmH" rel="noopener noreferrer" target="_blank">
               <img src={Wuntoo} alt="" />
             </a>
           </li>
