@@ -8,25 +8,6 @@ import Wuntoo from '../images/music/wuntoo.jpg';
 
 export default class music extends Component {
 
-  constructor() {
-
-    super();
-
-    this.state = {
-      data : []
-    }
-
-  }
-
-  componentDidMount() {
-
-    let accessToken = 'BQB-6rTqkseJlutSPdWmPEvypSKFYqwEVIcdvKvf2_EDDIFuQ-B2GSg6aZ0EKN-y91aorjURbAElWjVAhuNjzVi9dlPV9hVMSJCiJQvIjeV1uBmQh9ui56jXX1mhLug6WcbfTGKvJ1CT2xHHMsGBPNRi-94H9EtsAg';
-
-    fetch('https://api.spotify.com/v1/users/rosanusi', {
-      headers: {'Authorization': 'Bearer ' + accessToken}
-    }).then(response => response.json())
-    .then(data => console.log(data))
-  }
 
   render() {
     return (
