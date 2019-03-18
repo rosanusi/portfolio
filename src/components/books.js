@@ -7,7 +7,7 @@ import HowAsiaWorks from '../images/books/howasiaworks.jpg';
 export default class books extends Component {
   render() {
     return (
-      <div className="rdwn-books push-right">
+      <div className="rdwn-books">
         <h6 className="section-title">Commute Companions</h6>
         <small className="section-subtitle">Books I'm currently reading</small>
 

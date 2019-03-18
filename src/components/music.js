@@ -11,7 +11,7 @@ export default class music extends Component {
 
   render() {
     return (
-      <div className="rdwn-music push-right">
+      <div className="rdwn-music">
         <h6 className="section-title">Headnodes</h6>
         <small className="section-subtitle">My most repeated songs in the last few days</small>
 

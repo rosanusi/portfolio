@@ -1,54 +1,57 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500i');
+@import url('https://fonts.googleapis.com/css?family=Space+Mono:400,400i');
 @import 'reset';
 
-@font-face {
-    font-family: '../fonts/Gordita Light';
-    src: url('../fonts/Gordita-Light.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/Gordita-Light.woff') format('woff'), /* Modern Browsers */
-        url('../fonts/Gordita-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/Gordita-Light.svg#ce438f0598f1d19c46f25bf6da8cd0b3') format('svg'); /* Legacy iOS */
+// @font-face {
+//     font-family: '../fonts/Gordita Light';
+//     src: url('../fonts/Gordita-Light.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Gordita-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//         url('../fonts/Gordita-Light.woff') format('woff'), /* Modern Browsers */
+//         url('../fonts/Gordita-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+//         url('../fonts/Gordita-Light.svg#ce438f0598f1d19c46f25bf6da8cd0b3') format('svg'); /* Legacy iOS */
         
-}
+// }
   
-@font-face {
-    font-family: 'Gordita Regular';
-    src: url('../fonts/Gordita-Regular.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/Gordita-Regular.woff') format('woff'), /* Modern Browsers */
-        url('../fonts/Gordita-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/Gordita-Regular.svg#c91729199f846ba02a7621345254efa4') format('svg'); /* Legacy iOS */
+// @font-face {
+//     font-family: 'Gordita Regular';
+//     src: url('../fonts/Gordita-Regular.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Gordita-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//         url('../fonts/Gordita-Regular.woff') format('woff'), /* Modern Browsers */
+//         url('../fonts/Gordita-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+//         url('../fonts/Gordita-Regular.svg#c91729199f846ba02a7621345254efa4') format('svg'); /* Legacy iOS */
         
-}
+// }
   
-@font-face {
-    font-family: 'Gordita Medium';
-    src: url('../fonts/Gordita-Medium.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-        url('../fonts/Gordita-Medium.woff') format('woff'), /* Modern Browsers */
-        url('../fonts/Gordita-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
-        url('../fonts/Gordita-Medium.svg#67b0fdac623965b14b1ea8a7d16cb7dc') format('svg'); /* Legacy iOS */
+// @font-face {
+//     font-family: 'Gordita Medium';
+//     src: url('../fonts/Gordita-Medium.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Gordita-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//         url('../fonts/Gordita-Medium.woff') format('woff'), /* Modern Browsers */
+//         url('../fonts/Gordita-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+//         url('../fonts/Gordita-Medium.svg#67b0fdac623965b14b1ea8a7d16cb7dc') format('svg'); /* Legacy iOS */
         
-}  
+// }  
 
-@font-face {
-    font-family: 'Gordita Bold';
-    src: url('../fonts/Gordita-Bold.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('../fonts/Gordita-Bold.woff') format('woff'), /* Modern Browsers */
-         url('../fonts/Gordita-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../fonts/Gordita-Bold.svg#c619a96ac511676d933efb7e298f0628') format('svg'); /* Legacy iOS */
+// @font-face {
+//     font-family: 'Gordita Bold';
+//     src: url('../fonts/Gordita-Bold.eot'); /* IE9 Compat Modes */
+//     src: url('../fonts/Gordita-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+//          url('../fonts/Gordita-Bold.woff') format('woff'), /* Modern Browsers */
+//          url('../fonts/Gordita-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+//          url('../fonts/Gordita-Bold.svg#c619a96ac511676d933efb7e298f0628') format('svg'); /* Legacy iOS */
          
-}
+// }
 
 // Color
 $display-color : #2C4A4C;
+$body-color : #2C4A4C;
 $primary-color : #FF2C2D;
 
 // Font
-$body-font : 'Gordita Regular';
-$display-font : 'Gordita Medium';
+// $body-font : 'Gordita Regular';
+// $display-font : 'Gordita Medium';
 // $italic-font : 'Blanco Italic';
+$mono-font : 'Space Mono', monospace;
 
 a {
     color : $primary-color;
@@ -57,15 +60,16 @@ a {
 
 html, body {
     height: 100%;
-    font-family: $body-font, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     color : #2C4A4C;
+    background-color: #fff; 
 }
 
 .rdwn-grid-container {
     position : relative;
     display : grid;
-    max-width: 1200px;
+    max-width: 1400px;
     grid-template-columns: auto;
     grid-template-rows: repeat(8, auto);
     margin: 0 auto;
@@ -74,7 +78,8 @@ html, body {
 }
 
 .rdwn-hero {
-    margin-top: 8em;
+    padding : 4em 0;
+    border-bottom : #EDE9E5 1px solid;
 
     @media (max-width: 767px) { 
         margin-top : 4em;    
@@ -84,8 +89,9 @@ html, body {
     .rdwn-hero-brief {
 
         h1 {
-            font-size: 3em;
-            line-height : 1.5;     
+            font-weight: 300;
+            font-size: 2.5em;
+            line-height : 1.4;     
             
             @media (max-width: 767px) {
                 font-size : 1.6em;
@@ -102,11 +108,18 @@ html, body {
     margin-left : auto;  
 }
 
+.push-left {
+    width: 100%;
+    max-width : 1000px;
+    // padding : 5em 0;
+    margin-right : auto;  
+}
+
 .rdwn-header_floated {
     display : flex;
     flex-flow : row;
 
-    margin-top: 8em;
+    margin-top: 0;
 
     @media (max-width: 767px) { 
         display: block;   
@@ -114,10 +127,15 @@ html, body {
     }
 
     .rdwn-name {
+        color : $body-color;
 
         .title {
-            font-size : 1.6em;
-            color : $primary-color;
+            font-size : 1.2em;
+            // color : $primary-color;
+
+            a {
+                color : inherit;
+            }
 
             @media (max-width: 767px) { 
                 font-size:  1em;
@@ -125,10 +143,18 @@ html, body {
         }
 
         small {
-            font-size: 1em;
+            font-family: $mono-font;
+            font-size: .9em;
+            color : #808989;
             line-height : 1.5;
             display : block;
-            margin-top: 8px;
+            margin-top: 16px;
+            max-width : 480px;
+            line-height: 1.5;
+
+            a {
+                font-style: italic;
+            }
 
             @media (max-width: 767px) { 
                 font-size: 1em;
@@ -137,9 +163,8 @@ html, body {
 
     }
 
-    .rdwn-socials {
+    .rdwn-nav {
         margin-left : auto;
-        margin-top : 32px;
 
         @media (max-width: 767px) { 
             margin-top : 16px;
@@ -159,9 +184,7 @@ html, body {
             a {
                 color : #2C4A4C;
                 text-decoration : none;
-                font-size: 12px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
+                font-size: 1.2em;
                 transition: all .5s ease;
 
                 
@@ -179,9 +202,9 @@ html, body {
 
 .section-title {
     font-size: 1.2em;
-    font-family: $display-font;
+    font-weight: 600;
     margin-bottom : 8px;
-    color : #245EB8;
+    color : #body-color;
 
     @media (max-width: 767px) { 
         font-size : 1em;   
@@ -213,7 +236,8 @@ html, body {
 
 
 .rdwn-works {
-    margin-top : 8em;
+    padding: 4em 0;
+    border-bottom : #EDE9E5 1px solid;
 
     @media (max-width: 767px) { 
         margin-top : 4em;   
@@ -223,9 +247,9 @@ html, body {
     .rdwn-works-grid {
         margin-top : 2em;
         display: grid;
-        grid-gap: 2em;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
+        grid-gap: 1.5em;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(1, auto);
         line-height: 0;
 
         @media (max-width: 767px) { 
@@ -240,7 +264,7 @@ html, body {
                 display: block;
                 position: relative;
                 overflow: hidden;
-                border-radius : 12px;
+                // border-radius : 12px;
                 max-height: 380px;
 
                 img {
@@ -259,11 +283,19 @@ html, body {
             .details {
                 margin-top: 1em;
                 line-height: 1.5;
+                background-color: #Fff;
+                padding: 1.5em;
+                padding-left: 0;
+                max-width: 300px;
+                margin-top: -3em;
+                z-index: 1000;
+                position: relative;
 
                 .rdwn-work-title {
-                    font-family: $display-font;
+                    // font-family: $display-font;
                     display: block;
                     font-size: 1.2em;
+                    font-weight : 600;
                 }
 
 
@@ -284,7 +316,7 @@ html, body {
 
     .title {
         font-size: 2em;
-        font-family: $display-font;
+        // font-family: $display-font;
         margin-bottom : 16px;
 
         @media (max-width: 767px) { 
@@ -351,7 +383,7 @@ html, body {
     .small-title {
         display: inline-block;
         font-size: 1em;
-        font-family: $display-font;       
+        // font-family: $display-font;       
         margin-bottom: 1em;
     }
 
@@ -370,7 +402,7 @@ html, body {
 
     .small-title {
         font-size: 1em;
-        font-family: $display-font;       
+        // font-family: $display-font;       
     }
 
     .midway {
@@ -421,7 +453,9 @@ html, body {
 
 
 .rdwn-github {
-    margin-top: 8em;
+    padding: 4em 0;
+    border-bottom : #EDE9E5 1px solid;
+
 
     @media (max-width: 767px) { 
         margin-top : 4em;
@@ -432,8 +466,8 @@ html, body {
         margin-top : 3em;
         display: grid;
         grid-gap: 1em;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(auto);
 
         @media (max-width: 767px) { 
             display : block;        
@@ -445,8 +479,8 @@ html, body {
 
             a {
                 display: inline-block;
-                font-size : 1.2em;
-                font-family: $display-font;
+                font-size : 1em;
+                // font-family: $display-font;
                 color : $display-color;
                 margin-bottom : 8px;
                 -webkit-backface-visibility: hidden;
@@ -468,6 +502,15 @@ html, body {
             }
         }
     }
+}
+
+
+.rdwn-audiobook {
+    position: relative;
+    display: grid;
+    grid-gap: 3em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);   
 }
 
 
@@ -578,9 +621,43 @@ html, body {
 }
 
 footer {
+    margin-top : 5em;
     font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center;
-    margin-bottom : 3em;
+    margin-bottom : 1em;
+    display: flex;
+
+    .rdwn-socials {
+        display: inline-block;
+        margin-right : auto;
+        // margin-top : 32px;
+
+        @media (max-width: 767px) { 
+            margin-top : 16px;
+            display: none;
+        }
+
+        li {
+            display : inline-block;
+            margin-right : 16px;
+
+            @media (max-width: 767px) { 
+                // display: block;
+                margin-right: 8px;
+            }
+
+            a {
+                color : #2C4A4C;
+                text-decoration : none;
+                font-size: 14px;
+                transition: all .5s ease;
+
+                
+                &:hover {
+                    color : $primary-color;
+                }
+            }
+        }
+
+    }
+
 }

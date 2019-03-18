@@ -3,14 +3,14 @@ import { Link } from 'gatsby'
 import IcflixCover from '../images/works/icflix_cover.jpg';
 import SwiffixCover from '../images/works/swiffix_cover.jpg';
 import EnavigaCover from '../images/works/enaviga_cover.jpg';
-import NowplayrCover from '../images/works/nowplayr_cover.jpg';
+// import NowplayrCover from '../images/works/nowplayr_cover.jpg';
 
 
 export default class works extends Component {
   render() {
     return (
         <div className="rdwn-works">
-            <h6 className="section-title">Past works</h6>
+            <h6 className="section-title">Some works —</h6>
     
             <ul className="rdwn-works-grid">
                 <li>
@@ -40,7 +40,7 @@ export default class works extends Component {
                         <span className="rdwn-work-details">A Boat rental rlatform based in Belgium</span>
                     </div>
                 </li>  
-                <li>
+                {/* <li>
                     <Link to="/playground/">
                         <img src={NowplayrCover} alt="" />
                     </Link>
@@ -48,7 +48,7 @@ export default class works extends Component {
                         <span className="rdwn-work-title">Playground</span>
                         <span className="rdwn-work-details">Random design ideas regularly updated</span>
                     </div>                    
-                </li>            
+                </li>             */}
             </ul>
     
         </div>  

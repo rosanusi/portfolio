@@ -7,17 +7,15 @@ export default class nav extends Component {
     <div className="rdwn-header_floated">
       
         <div className="rdwn-name">
-          <h2 className="title"><Link to="/">Busola Sanusi</Link></h2>
-          <small>A designer working on digital products</small>
+          <h2 className="title"><Link to="/">Busola Sanusi</Link> <span>— Digital Product Designer</span></h2>
+          <small>Currently working amongst awesome folks at <Link to="">booking.com</Link> to help improve how people experience the world.</small>
         </div>
-  
-        <ul className="rdwn-socials">
-          <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">twitter</a></li>
-          <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">spotify</a></li>
-          <li><a href="https://github.com/rosanusi" rel="noopener noreferrer" target="_blank">github</a></li>
-          <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">insta</a></li>
-        </ul>
-  
+{/*   
+        <ul className="rdwn-nav">
+          <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Journal</a></li>
+          <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">Contact me</a></li>
+        </ul> */}
+
     </div>  
     )
   }
