@@ -5,15 +5,16 @@ export default class footer extends Component {
     return (
         <footer>
 
-        <ul className="rdwn-socials">
-          <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">twitter</a></li>
-          <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">spotify</a></li>
-          <li><a href="https://github.com/rosanusi" rel="noopener noreferrer" target="_blank">github</a></li>
-          <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">insta</a></li>
-        </ul>
-        <span>Copyright, 2019.</span>
-
+          <h6 className="section-title">Socials</h6>
           
+          <ul className="rdwn-socials">
+            <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
+            <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">Spotify</a></li>
+            <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">Instagram</a></li>
+          </ul>
+
+          {/* <span className="copyright">Copyright, 2019.</span> */}
+
         </footer>
     )
   }

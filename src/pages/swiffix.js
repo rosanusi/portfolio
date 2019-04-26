@@ -3,99 +3,116 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Nav from '../components/nav'
-import LazyLoad from 'react-lazy-load';
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-
-import SwiffixMain from '../images/works/swiffix/main.jpg';
-import LandingPage from '../images/works/swiffix/landingpage.jpg';
-import Wireframes from '../images/works/swiffix/wireframes.jpg';
-import More1 from '../images/works/swiffix/more1.jpg';
-import More2 from '../images/works/swiffix/more2.jpg';
-import More3 from '../images/works/swiffix/more3.jpg'; 
-
-
-const Swiffix = () => (
+const Swiffix = (props) => (
   <Layout>
     <SEO title="Swiffix | Connecting People with verified professional handymen" />
     
-    <Nav />
 
-    <div className="rdwn-works-header">
-        <h1 className="title">Swiffix</h1>
-        <small>Connecting people with verified professional handymen</small>
+    <div className="rdwn-container-works">
+
+        <Nav />
+
+        <div className="rdwn-works-main">
+
+            <div className="rdwn-works-content">
+
+                <div className="brief">
+                    <h3 className="title">Swiffix.com</h3>
+                    <small className="subtitle">Connecting people with verified professional handymen</small>
+                    <p>Swiffix wants to simplify people’s lives by connecting them with verified professionals to help them with tasks in the areas of plumbing, electrical, etc.</p>
+                </div>
+
+                <div className="resp">
+                    <span className="date">2015</span>
+                    <p>User Experience, User Interfaces</p>
+                    <p>Web, iOS</p>
+                </div>
+                
+            </div>
+
+            <div className="workImage">
+                <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+
+            </div>
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Creating a trustable community</h6>
+                <p>With so many handymen around but difficult to identify trustable professionals among them. Swiffix's aim was to validate the hypothesis that, creating a rating based community of handymen will make it easier for people to identify the best professionals around town.</p>
+            </div>
+
+
+            <div className="workImage">
+                <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+            </div>
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Designing the MVP</h6>
+                <p>In collaboration with a very small team - The founder, An engineer and a Marketing manager, we spent the following two months to create the MVP of the platform to validate the hypothesis at hand. My role was to design the first version of the iOS App. And based on that, lay the foundation of the web version.</p>
+            </div>
+
+            <div className="workImage">
+                <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+            </div>
+
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Iterating based on validation</h6>
+                <p>At the beginning, there were explorations around adding delight to the experience with introduction of colors and copy that's perceived as fun. As we move along during the validation phase, we did realized that a different approach where we bring the functionality of the product to the front works better. </p>
+
+                <p>As we enter development phase of the iOS project, we started thinking about creating a web version of the product. Created the customer journey mirroring the experience present on the mobile version with the affordances that desktop allows.</p>
+            </div>
+
+            <div className="workImage">
+                <Img fluid={props.data.imageFour.childImageSharp.fluid} />
+            </div>
+                
+
+
+        </div>
+
     </div>
-    <div className="workImage">
-        <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={SwiffixMain} alt="" />
-            </LazyLoad>
-    </div>
-    <div className="rdwn-works-overview">
 
-        <div className="brief">
-            <span className="small-title">Challenge</span>
-            <p>A platform that attempted to simplify people’s lives by connecting them with 
-verified professional handymen for help in the areas of plumbing, electricals, etc. As a very early stage startup, I worked on contract basis to 
-help the founding team design the minimum viable product.</p>
-        </div>
-
-        <div className="resp">
-            <span className="small-title">Responsibilities</span>
-            <p>UX, UI Design</p>
-            <p>Web, Mobile</p>
-            <p>2015</p>
-        </div>
-    </div>
-
-    <div className="rdwn-content">
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={LandingPage} alt="" />
-            </LazyLoad>
-        </div>
-
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={Wireframes} alt="" />
-            </LazyLoad>
-        </div>
-
-
-        <div className="midway">
-            <p>I designed the iOS based on provided wireframees provided by the team. The team wasn't sure how this product can work on the web. 
-                So, I helped create wireframes to focus on the customer journey from marketing page to getting a handyman to come to their place.</p>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More1} alt="" />
-            </LazyLoad>
-        </div>
-
-
-
-        <div className="midway">
-        <p>I also built new features for their iOS app to help customers provide more details to the handyman about the 
-        problem to be solved and help in creating a more accurate work estimate beofre accepting the job. I also worked 
-        on the illustration i nthe marketing page of the product.</p>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More2} alt="" />
-            </LazyLoad>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More3} alt="" />
-            </LazyLoad>
-        </div>
-        
-    </div>
 
   </Layout>
 )
 
-export default Swiffix
+export default Swiffix;
+
+export const pageQuery = graphql`
+    query {
+        imageOne: file(relativePath: { eq: "works/swiffix/main.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageTwo: file(relativePath: { eq: "works/swiffix/wireframes.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageThree: file(relativePath: { eq: "works/swiffix/landingpage.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageFour: file(relativePath: { eq: "works/swiffix/more2.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

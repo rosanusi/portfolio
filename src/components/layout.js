@@ -20,10 +20,9 @@ const Layout = ({ children }) => (
         {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
 
 
+          {children}          
 
-        <div className="rdwn-grid-container">
-          {children}
-        </div>
+
       </>
     )}
   />

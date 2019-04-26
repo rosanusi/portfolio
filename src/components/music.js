@@ -18,22 +18,22 @@ export default class music extends Component {
         <ul className="rdwn-music-grid">
           <li>
             <a href="https://open.spotify.com/album/67Yc6dfTWwuPceZRK7sluD" rel="noopener noreferrer" target="_blank">
-                <img src={Madvillian} alt="" />
+                madvillian
             </a>
           </li>
           <li>
             <a href="https://open.spotify.com/album/3539EbNgIdEDGBKkUf4wno" rel="noopener noreferrer" target="_blank">
-              <img src={Portishead} alt="" />
+              portishead
             </a>
           </li>
           <li>
             <a href="https://open.spotify.com/album/66at85wgO2pu5CccvqUF6i" rel="noopener noreferrer" target="_blank">
-              <img src={Sweatshirt} alt="" />
+              sweatshirt
             </a>
           </li>
           <li>
             <a href="https://open.spotify.com/album/5MWhs2N3eO78ppIYmRUzmH" rel="noopener noreferrer" target="_blank">
-              <img src={Wuntoo} alt="" />
+              wuntoo
             </a>
           </li>
         </ul>

@@ -3,141 +3,164 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Nav from '../components/nav'
-import LazyLoad from 'react-lazy-load';
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 
-import icflixMain from '../images/works/icflix/main.jpg';
-import icflixFeature from '../images/works/icflix/feature.jpg';
-import More1 from '../images/works/icflix/more1.jpg';
-import More2 from '../images/works/icflix/more2.jpg';
-import More3 from '../images/works/icflix/more3.jpg';
-import More4 from '../images/works/icflix/more4.jpg';
-import More6 from '../images/works/icflix/more6.jpg';
-import Tv from '../images/works/icflix/tv.jpg';
-
-
-const Icflix = () => (
+const Icflix = (props) => (
   <Layout>
     <SEO title="icflix.com | Middle East Movie streaming platform" />
     
-    <Nav />
 
-    <div className="rdwn-works-header">
-        <h1 className="title">icflix.com</h1>
-        <small>Middle East Movie streaming platform</small>
-    </div>
-    <div className="workImage">
-        <LazyLoad debounce={false}offsetVertical={500}>
-            <img src={icflixMain} alt="" />
-        </LazyLoad>
-    </div>
-    <div className="rdwn-works-overview">
+    <div className="rdwn-container-works">
 
-        <div className="brief">
-            <span className="small-title">Challenge</span>
-            <p>During my 3 year stint at icflix, I helped design the user experience across
-            various parts of the product and different platforms. The challenge was very clear - In order to gain the most market share in a new market (Middle East) with growing competition, icflix app must be available on all major platforms. This was the strongest market differentiator.</p>
+        <Nav />
+
+        <div className="rdwn-works-main">
+
+            <div className="rdwn-works-content">
+                <div className="brief">
+                    <h3 className="title">icflix.com</h3>
+                    <small className="subtitle">Middle East Movie streaming platform</small>
+                    <p>Icflix is a Middle East based music streaming company offering Arabic, Bollywood and Hollywood content to the Middle East.</p>
+                </div>
+
+                <div className="resp">
+                    <span className="date">2013 - 2016</span>
+                    <p>Strategy, User Experience, User Interfaces, HTML/CSS</p>
+                    <p>Across major platforms : Web, iOS, Android, TV, XBox, Playstation </p>
+                </div>
+            </div>
+
+
+            <div className="workImage">
+                    <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+            </div>
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Winning in a new market</h6>
+                <p>In order to gain the most market share in a relatively new market (Middle East) with fast growing competition, icflix must be available on all major devices in the region.</p>
+            </div>
+
+            <div className="workImage">
+                    <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
+            </div>
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Designing the platform</h6>
+                <p>I was responsible for the design of the product on different platforms - iOS, Desktop, Smart TV and XBox. I worked very closely with the teams from engineering, marketing and leadership to constantly brainstorm on ideas, prototype potential solutions for customer validation and overall continued improvement of the entire product.</p>
+            </div>
+
+            <div className="workImage">
+                <Img fluid={props.data.imageThree.childImageSharp.fluid} />
+            </div>
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">Focus on discovery</h6>
+                <p>We agreed it was important that customer experience is designed around discovery. In all of the platforms, the home screens focused on showing new content, popular contents and allowing partners to jump back into content they were watching before.</p>
+            </div>
+
+
+            
+            <div className="workImage">
+                <Img fluid={props.data.imageFour.childImageSharp.fluid} />
+            </div>
+
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">A common product requirement</h6>
+                <p>Creating a product across multiple platforms is very daunting endeavor and risk ending up disastrous if not managed properly. In order to mitigate this risk, I collaborated with the product team to create a common product requirement document which attempted to answer basic functionality questions of all the features of the product. This helped maintain feature parity across platforms and helped steer the product development in one direction.</p>
+            </div>
+
+
+            <div className="workImage">
+                <Img fluid={props.data.imageFive.childImageSharp.fluid} />
+            </div>
+
+            <div className="rdwn-work-copy">
+                <h6 className="small-title">payment challenges</h6>
+                <p>In the middle east, different countries have different regulations regarding payment. As a result of this differences, we had to approach the customer experience regarding payment in a way that it's localized to the way customers from these countries currently make payment to digital products.</p>
+
+                <p>We spoke to customers from these countries to understand their behavior and finally propose solutions that worked for each of these countries.</p>
+            </div>
+
+            <div className="workImage">
+                    <Img fluid={props.data.imageSix.childImageSharp.fluid} />
+            </div>
+
+
+
+            <div className="workImage">
+                <Img fluid={props.data.imageSeven.childImageSharp.fluid} />
+            </div>
+
+            <div className="rdwn-work-copy">
+                <span className="small-title">and for the kids</span>
+                <p>We wanted to give kids their own different app on tv. Partially because that allows us to separate adult content from kids but also more importantly because we found that kids discover and watch content a little different to adults.</p>
+            </div>
+             
         </div>
 
-        <div className="resp">
-            <span className="small-title">Responsibilities</span>
-            <p>Strategy, UX, UI Design, HTML/CSS</p>
-            <p>Web, iOS, Android, TV, XBox, Playstation </p>
-            <p>Between 2013-2016</p>
-        </div>
-    </div>
-
-    <div className="rdwn-content">
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={icflixFeature} alt="" />
-            </LazyLoad>
-
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={Tv} alt="" />
-            </LazyLoad>
-        </div>
-
-        <div className="midway">
-            <p>With clear problem statement defined, I worked very closely with team of engineers to come up with designs and continually support them in designing around whatever constraints they may face techincally.</p>
-            <p>Besides working on the customer journey of the main app, I also worked side by side with the marketing team and the leadeship team to design the first version of the marketing page.</p>
-        </div>
-
-
-        <div className="workImage">
-
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More1} alt="" />
-            </LazyLoad>
-        </div>
-
-
-        <div className="midway">
-            <p>Creating a products across multiple channels simultaneously is very daunting and risk ending up 
-                disastrous if not managed properly.</p>
-                
-            <p>In order to mitigate this risk, I created a common product 
-                requirement document which attempted to answer basic functionality questions of all the features 
-                of the product designed. This helped maintain feature parity across platforms and helped steer the 
-                product development in one direction.</p>
-        </div>
-
-        <div className="workImage">
-
-
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More2} alt="" />
-            </LazyLoad>
-
-        </div>
-
-
-
-        <div className="midway">
-            <span className="small-title">Challenges in account creation and payment system</span>
-            <p>Throughout the middle east, different countries have different regulations regarding payment.
-                As a result of this differences, we had to make our payment system flexible enough to allow even customers from 
-                the lowest denominator country pay for the service easily. We spoke to customers from some other more difficult 
-                countries to understand their behaviour when it comes to payment and created solutions that works for them.</p>
-
-            <p>After the research, I created the account management task flow with focus on making sure most of the customers were able to make payment easily with their preferred payment method without friction.
-            </p>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More3} alt="" />
-            </LazyLoad>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More6} alt="" />
-            </LazyLoad>
-        </div>
-
-
-        <div className="midway">
-            <span className="small-title">icflixkids</span>
-            <p>Also worth mentioning is the icflixkids app designed to focus on the little ones in the house. 
-                As we continued to grow, we found it necessary to create a dedicated platform for kid. 
-                I had the opportunity to create a different kind of UI different from what I'm used to.</p>
-        </div>
-
-        <div className="workImage">
-            <LazyLoad debounce={false}offsetVertical={500}>
-                <img src={More4} alt="" />
-            </LazyLoad>
-        </div>
-
-        
     </div>
 
   </Layout>
 )
 
 export default Icflix
+
+export const pageQuery = graphql`
+    query {
+        imageOne: file(relativePath: { eq: "works/icflix/newcover.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageTwo: file(relativePath: { eq: "works/icflix/feature.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageThree: file(relativePath: { eq: "works/icflix/more2.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageFour: file(relativePath: { eq: "works/icflix/feature2.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageFive: file(relativePath: { eq: "works/icflix/more1.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageSix: file(relativePath: { eq: "works/icflix/more5.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        imageSeven: file(relativePath: { eq: "works/icflix/more4.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 4000) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+            
+        }
+    }
+`
