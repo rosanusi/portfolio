@@ -11,12 +11,12 @@ class hero extends Component {
                 product development.</p>
 
                 <p>
-                <span className="highlight current">Currently</span>, improving how people experience the world at <a href="http://www.booking.com"  rel="noopener noreferrer" target="_blank">booking.com</a> in beautiful city of Amsterdam.
+                <span className="highlight current">Currently</span>, improving how people experience the world at <a href="http://www.booking.com"  rel="noopener noreferrer" target="_blank">booking.com</a> in the beautiful city of Amsterdam.
                 </p>
 
                 <p>
-                <span className="highlight previous">Previously</span>, I spent some time working on a <Link to="/icflix/">movie streaming 
-                platform</Link>, helped a startup work on their <Link to="/enaviga/">boat rental platform</Link> and 
+                <span className="highlight previous">Previously</span>, I worked at a <Link to="/icflix/">movie streaming 
+                company</Link>, helped another startup work on their <Link to="/enaviga/">boat rental platform</Link> and 
                 worked closely with another early stage start-up to design an app 
                 that <Link to="/swiffix/">helps people find verified handymen</Link>. 
                 </p>
