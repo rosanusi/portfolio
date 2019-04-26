@@ -21,7 +21,6 @@ const Swiffix = (props) => (
 
                 <div className="brief">
                     <h3 className="title">Swiffix.com</h3>
-                    <small className="subtitle">Connecting people with verified professional handymen</small>
                     <p>Swiffix wants to simplify people’s lives by connecting them with verified professionals to help them with tasks in the areas of plumbing, electrical, etc.</p>
                 </div>
 

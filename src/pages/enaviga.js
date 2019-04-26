@@ -19,8 +19,7 @@ const Enaviga = (props) => (
             <div className="rdwn-works-content">
                 <div className="brief">
                     <h3 className="title">Enaviga.com</h3>
-                    <small className="subtitle">A Boat Rental Platform</small>
-                    <p>Enaviga.com helps people rent boat easily while also helping boat owners manage their boats.</p>
+                    <p>Enaviga.com helps people rent boat easily while also helping boat owners manage their boats more effectively and on-the-go.</p>
                 </div>
 
                 <div className="resp">

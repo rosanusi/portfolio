@@ -21,8 +21,7 @@ const Icflix = (props) => (
             <div className="rdwn-works-content">
                 <div className="brief">
                     <h3 className="title">icflix.com</h3>
-                    <small className="subtitle">Middle East Movie streaming platform</small>
-                    <p>Icflix is a Middle East based music streaming company offering Arabic, Bollywood and Hollywood content to the Middle East.</p>
+                    <p>Icflix is a Middle East based music streaming company offering Arabic, Bollywood and Hollywood content</p>
                 </div>
 
                 <div className="resp">
