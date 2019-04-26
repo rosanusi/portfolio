@@ -9,6 +9,7 @@ export default class footer extends Component {
           
           <ul className="rdwn-socials">
             <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
+            <li><a href="https://dribbble.com/busolasanusi" rel="noopener noreferrer" target="_blank">Dribbble</a></li>
             <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">Spotify</a></li>
             <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">Instagram</a></li>
           </ul>
