@@ -34,7 +34,7 @@ module.exports = {
       options: {
         consumerKey: "84807-6782aaae4c71830e0e6d7099",
         accessToken: "480fa4f8-440f-bc60-e78f-86695e",
-        weeksOfHistory: 3,
+        weeksOfHistory: 2,
         apiMaxRecordsToReturn: 1000,
         getCurrentWeekOnly: `n`,
         // stateFilterString: "all",
