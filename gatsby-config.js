@@ -34,7 +34,7 @@ module.exports = {
       options: {
         consumerKey: "84807-6782aaae4c71830e0e6d7099",
         accessToken: "480fa4f8-440f-bc60-e78f-86695e",
-        weeksOfHistory: 2,
+        weeksOfHistory: 3,
         apiMaxRecordsToReturn: 1000,
         getCurrentWeekOnly: `n`,
         // stateFilterString: "all",
@@ -48,15 +48,6 @@ module.exports = {
         // domainFilterString: "buzzfeed.com"
       }
     },   
-    {
-      resolve: `gatsby-plugin-nprogress`,
-      options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
-        showSpinner: false,
-      }
-    }, 
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {

@@ -4,27 +4,31 @@ import { Link } from 'gatsby'
 class hero extends Component {
     render() {
         return (
-            <div className="rdwn-bio_copy">
-                <p>My daily work revolves around improving people's 
-                interaction with digital products by applying principles, 
-                processes and methods that put humans at the centre of 
-                product development.</p>
+            
+            <div className="rdwn-grid-container">
 
-                <p>
-                <span className="highlight current">Currently</span>, improving how people experience the world at <a href="http://www.booking.com"  rel="noopener noreferrer" target="_blank">booking.com</a> in the beautiful city of Amsterdam.
-                </p>
+                <div className="rdwn-main-section">
 
-                <p>
-                <span className="highlight previous">Previously</span>, I worked at a <Link to="/icflix/">movie streaming 
-                company</Link>, helped another startup work on their <Link to="/enaviga/">boat rental platform</Link> and 
-                worked closely with another early stage start-up to design an app 
-                that <Link to="/swiffix/">helps people find verified handymen</Link>. 
-                </p>
+                    <div className="rdwn-bio_copy">
+                        <p className="rdwn-bio_copy__main">My daily work revolves around improving people's 
+                        interaction with digital products by applying principles, 
+                        processes and methods that put humans at the centre of 
+                        product development.</p>
 
-                <p>
-                I like to keep  <Link to="/links/">things I've recently read</Link> and sometimes <a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">tweet about music &amp; design</a>. Currently not available for freelance but always happy to have a great chat <a href="mailto:rosanusi@gmail.com" rel="noopener noreferrer" target="_blank">here</a>
-                </p>
-            </div>    
+                        <p className="rdwn-bio_copy__main">
+                        Currently improving how people experience the world @ <a href="http://www.booking.com"  rel="noopener noreferrer" target="_blank">booking.com</a> in Amsterdam.
+                        </p>
+
+
+                        <div className="rdwn-bio-subsection">
+                            <h2 className="rdwn-bio_copy__smalltitle">Selected past projects</h2>
+                            <p className="rdwn-project-titles">
+                                <Link to="/preferred">Program dashboard design</Link>, <Link to="/icflix">Smart TV app redesign</Link>, <Link to="/icflixvideo">Custom web video player revamp</Link>, <Link to="/enaviga">Partner platform for Boat rental service</Link>
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>  
         );
     }
 }

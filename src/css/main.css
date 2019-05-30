@@ -1,8 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Space+Mono:400,400i");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("//hello.myfonts.net/count/39773e");
+@import url("//hello.myfonts.net/count/39778f");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -49,46 +52,92 @@ table {
 * {
   box-sizing: border-box; }
 
+/**
+ * @license
+ * MyFonts Webfont Build ID 3766078, 2019-05-25T02:18:23-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Formular by Brownfox
+ * URL: https://www.myfonts.com/fonts/brownfox/formular/regular/
+ * 
+ * Webfont: FormularMono by Brownfox
+ * URL: https://www.myfonts.com/fonts/brownfox/formular/mono/
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3766078
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) 2014 by Vyacheslav Kirilenko, Gayane Bagdasaryan. All rights reserved.
+ * 
+ * © 2019 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
 @font-face {
-  font-family: "Space Grotesk Regular";
-  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Regular.woff") format("woff"), url("../fonts/SpaceGrotesk-Regular.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'Formular';
+  src: url("../webfonts/39773E_0_0.eot");
+  src: url("../webfonts/39773E_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/39773E_0_0.woff2") format("woff2"), url("../webfonts/39773E_0_0.woff") format("woff"), url("../webfonts/39773E_0_0.ttf") format("truetype"), url("../webfonts/39773E_0_0.svg#wf") format("svg"); }
 @font-face {
-  font-family: "Space Grotesk Medium";
-  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Medium.woff") format("woff"), url("../fonts/SpaceGrotesk-Medium.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'Formular-Medium';
+  src: url("../webfonts/39778F_0_0.eot");
+  src: url("../webfonts/39778F_0_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/39778F_0_0.woff2") format("woff2"), url("../webfonts/39778F_0_0.woff") format("woff"), url("../webfonts/39778F_0_0.ttf") format("truetype"); }
 @font-face {
-  font-family: "Space Grotesk Bold";
-  src: url("../fonts/SpaceGrotesk-Bold.woff2") format("woff2"), url("../fonts/SpaceGrotesk-Bold.woff") format("woff"), url("../fonts/SpaceGrotesk-Bold.otf") format("opentype");
-  font-style: normal;
-  font-weight: 400; }
+  font-family: 'FormularMono';
+  src: url("../webfonts/39773E_1_0.eot");
+  src: url("../webfonts/39773E_1_0.eot?#iefix") format("embedded-opentype"), url("../webfonts/39773E_1_0.woff2") format("woff2"), url("../webfonts/39773E_1_0.woff") format("woff"), url("../webfonts/39773E_1_0.ttf") format("truetype"), url("../webfonts/39773E_1_0.svg#wf") format("svg"); }
+.Formular {
+  font-family: Formular;
+  font-weight: normal;
+  font-style: normal; }
+
+.Formular-Medium {
+  font-family: Formular-Medium;
+  font-weight: normal;
+  font-style: normal; }
+
+.FormularMono {
+  font-family: FormularMono;
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-size: 16px; }
+
 html, body {
   height: 100%;
-  font-family: "Space Grotesk Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  color: #141414;
-  background-color: #fff; }
+  color: #292a2c;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased; }
 
-a {
-  color: #141414;
-  border-bottom: 1px solid #ff9293;
-  text-decoration: none; }
-  a:hover {
+a:not(.rdwn-name) {
+  color: #292a2c;
+  border-bottom: 1px solid #e9eaeb;
+  text-decoration: none;
+  cursor: pointer; }
+  a:not(.rdwn-name):hover {
     border-bottom: 1px solid #FF2C2D;
     color: #FF2C2D; }
+
+p {
+  font-family: Formular;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1rem; }
+
+.rdwn-wrap {
+  padding: 2rem; }
 
 .rdwn-grid-container {
   position: relative;
   display: grid;
-  max-width: 1200px;
+  max-width: 60rem;
   width: 100%;
-  grid-template-columns: 2.3fr .7fr;
-  grid-template-rows: repeat(3, auto);
-  grid-gap: 4em;
+  grid-template-rows: repeat(auto);
   margin: 0 auto;
-  padding-left: 4em; }
+  margin-top: 10em; }
   @media screen and (max-width: 900px) {
     .rdwn-grid-container {
       grid-template-columns: 1fr;
@@ -96,32 +145,21 @@ a {
       grid-gap: 2em;
       padding: 0 2em; } }
 
-.rdwn-container-works {
-  position: relative;
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto; }
-  @media (max-width: 600px) {
-    .rdwn-container-works .rdwn-header_floated {
-      padding: 0 2em; } }
-
-.rdwn-container-playground {
-  position: relative;
-  display: grid;
-  max-width: 1200px;
-  margin: 0 auto;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-gap: 4em; }
-  .rdwn-container-playground .rdwn-header_floated {
-    grid-column-start: unset;
-    grid-column-end: unset; }
-  .rdwn-container-playground .rdwn-works-header {
-    margin-top: 0;
-    text-align: left;
-    margin-left: 0; }
+.rdwn-header {
+  display: flex;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Formular; }
+  .rdwn-header .rdwn-name {
+    text-decoration: none;
+    color: #292a2c; }
+    .rdwn-header .rdwn-name small {
+      color: #a7a9ad; }
+  .rdwn-header .rdwn-links {
+    margin-left: auto; }
+    .rdwn-header .rdwn-links li {
+      display: inline-block;
+      margin-left: 12px; }
 
 .rdwn-playground-grid {
   display: grid;
@@ -133,263 +171,175 @@ a {
     border: 1px solid #f4f4f4; }
 
 .rdwn-bio_copy {
-  margin-top: -12px; }
-  .rdwn-bio_copy .label {
-    font-size: .9em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    display: block;
-    margin-bottom: 8px; }
-  .rdwn-bio_copy p {
-    font-size: 1.625em;
-    line-height: 1.5;
-    margin-bottom: 1em; }
-    @media (max-width: 600px) {
-      .rdwn-bio_copy p {
-        font-size: 1.2em; } }
-
-.push-right {
-  width: 100%;
-  max-width: 750px;
-  margin-left: auto; }
-
-.push-left {
-  width: 100%;
-  max-width: 40em;
-  margin-right: auto; }
-
-.rdwn-header_floated {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  margin-top: 4em; }
-  @media screen and (max-width: 900px) {
-    .rdwn-header_floated {
-      grid-column: unset; } }
-  .rdwn-header_floated .rdwn-name {
-    color: #141414; }
-    .rdwn-header_floated .rdwn-name .title {
-      font-size: 4em;
-      line-height: 1.4;
-      font-family: "Space Grotesk Bold"; }
-      .rdwn-header_floated .rdwn-name .title a {
-        color: #FF2C2D;
-        border: none; }
-        .rdwn-header_floated .rdwn-name .title a:hover {
-          color: #f80001;
-          border-bottom: 1px solid #FF2C2D; }
-      @media screen and (max-width: 900px) {
-        .rdwn-header_floated .rdwn-name .title {
-          font-size: 2em; } }
-      @media (max-width: 600px) {
-        .rdwn-header_floated .rdwn-name .title {
-          font-size: 1.4em; } }
-
-.rdwn-works {
-  margin-top: 8em; }
+  margin-top: -.8rem; }
   @media (max-width: 600px) {
-    .rdwn-works {
-      margin-top: 4em; } }
-  .rdwn-works .rdwn-works-grid {
-    display: grid;
-    grid-gap: 4em;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto);
-    line-height: 0; }
-    @media (max-width: 600px) {
-      .rdwn-works .rdwn-works-grid {
-        grid-template-columns: repeat(1, auto);
-        grid-template-rows: repeat(4, auto); } }
-    .rdwn-works .rdwn-works-grid li a {
-      display: block;
-      position: relative;
-      overflow: hidden;
-      border-radius: 12px;
-      max-height: 1166px; }
-      .rdwn-works .rdwn-works-grid li a img {
-        position: relative;
-        width: 100%;
-        -webkit-backface-visibility: hidden;
-        will-change: transform;
-        transition: transform .2s ease-in; }
-        .rdwn-works .rdwn-works-grid li a img:hover {
-          transform: scale(1.05); }
-    .rdwn-works .rdwn-works-grid li .details {
-      line-height: 1.5;
-      background-color: #Fff;
-      padding: 1em;
-      position: relative; }
-      .rdwn-works .rdwn-works-grid li .details .rdwn-work-title {
-        font-family: "Space Grotesk Regular";
-        display: block;
-        font-size: 1.2em;
-        margin: .8em 0 .4em;
-        color: #808989; }
-      .rdwn-works .rdwn-works-grid li .details .rdwn-work-details {
-        display: block;
-        font-size: 1.2em; }
-    .rdwn-works .rdwn-works-grid li:first-child {
-      margin-top: 8em; }
-    .rdwn-works .rdwn-works-grid li:nth-child(4) {
-      margin-top: -8em; }
+    .rdwn-bio_copy p {
+      font-size: 1.2rem; } }
+  .rdwn-bio_copy .rdwn-bio_copy__main {
+    font-size: 2.8rem;
+    line-height: 1.4;
+    letter-spacing: -.75px;
+    margin-bottom: 3rem; }
+  .rdwn-bio_copy .rdwn-bio-subsection {
+    font-family: Formular;
+    margin-top: 4rem; }
+    .rdwn-bio_copy .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
+      font-family: FormularMono;
+      font-size: 1.4rem;
+      margin-bottom: 2rem; }
+    .rdwn-bio_copy .rdwn-bio-subsection h4 {
+      font-family: Formular-Medium;
+      font-size: 1.5rem;
+      margin-bottom: 1rem; }
+    .rdwn-bio_copy .rdwn-bio-subsection .rdwn-project-titles {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem; }
 
-.rdwn-works-header {
+.rdwn-bio_copy.profile {
+  max-width: calc(768px - 2rem);
+  width: 100%;
+  margin: 0 auto; }
+  .rdwn-bio_copy.profile .rdwn-bio_copy__main {
+    font-family: Formular-Medium; }
+  .rdwn-bio_copy.profile .rdwn-bio_copy__smalltitle {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #a7a9ad;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.rdwn-pagetitle {
+  margin-bottom: 4rem;
   text-align: center;
-  max-width: 50em;
-  margin: 0 auto;
-  margin-top: 5em; }
-  .rdwn-works-header .title {
-    font-size: 2em;
-    font-family: "Space Grotesk Bold";
-    margin-bottom: 16px; }
-    @media (max-width: 600px) {
-      .rdwn-works-header .title {
-        font-size: 1.5em; } }
-  .rdwn-works-header small {
-    font-size: 1.2em;
-    line-height: 1.5; }
-    @media (max-width: 600px) {
-      .rdwn-works-header small {
-        font-size: 1em; } }
+  font-family: FormularMono;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #a7a9ad; }
 
 .rdwn-works-main {
-  margin-top: 4em; }
-  .rdwn-works-main .rdwn-works-content {
-    display: flex;
-    flex-flow: row;
-    max-width: 60em;
-    margin: 0 auto;
-    padding: 0 2em; }
-    @media (max-width: 600px) {
-      .rdwn-works-main .rdwn-works-content {
-        display: block; } }
-    .rdwn-works-main .rdwn-works-content .brief {
-      max-width: 40em;
-      width: 100%;
-      margin-right: 4em; }
-      .rdwn-works-main .rdwn-works-content .brief .title {
-        font-size: 1.2em;
-        font-family: "Space Grotesk Medium";
-        margin-bottom: 1em; }
-      .rdwn-works-main .rdwn-works-content .brief .subtitle {
-        display: block;
-        font-size: 1.2em;
-        line-height: 1.5;
-        color: #808989;
-        margin-bottom: 1em; }
-      .rdwn-works-main .rdwn-works-content .brief p {
-        line-height: 1.5; }
-    .rdwn-works-main .rdwn-works-content .resp {
-      margin-top: 4.6em;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-      @media (max-width: 600px) {
-        .rdwn-works-main .rdwn-works-content .resp {
-          margin-top: 2em;
-          margin-bottom: 2em;
-          margin-left: 0;
-          width: 100%; } }
-      .rdwn-works-main .rdwn-works-content .resp .date {
-        color: #808989;
-        margin-bottom: 8px;
-        display: block; }
-      .rdwn-works-main .rdwn-works-content .resp p {
-        font-size: .9em;
-        line-height: 1.5;
-        margin-bottom: 8px; }
-    .rdwn-works-main .rdwn-works-content .small-title {
-      display: inline-block;
-      font-size: 1em;
-      font-family: "Space Grotesk Bold";
-      margin-bottom: 1em; }
-    .rdwn-works-main .rdwn-works-content p {
-      line-height: 1.5;
-      font-size: 1.2em; }
-    .rdwn-works-main .rdwn-works-content .small-title {
-      font-size: 1em;
-      font-family: "Space Grotesk Bold"; }
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+  font-family: Formular; }
+  .rdwn-works-main .brief {
+    width: 100%;
+    margin-right: 4rem; }
+    .rdwn-works-main .brief .title {
+      font-family: Formular-Medium;
+      font-size: 2.8rem;
+      letter-spacing: -.75px;
+      line-height: 1.4;
+      margin-bottom: 1.5rem;
+      text-align: center; }
+    .rdwn-works-main .brief .date {
+      color: #a7a9ad;
+      display: block;
+      text-align: center;
+      font-family: FormularMono;
+      margin-bottom: 1.5rem; }
   .rdwn-works-main .rdwn-work-copy {
-    max-width: 768px;
+    max-width: calc(768px - 2rem);
     width: 100%;
     margin: 0 auto;
-    margin-top: 3em;
-    padding: 0 2em; }
+    margin-top: 3rem; }
     .rdwn-works-main .rdwn-work-copy .small-title {
-      margin-bottom: 1em;
+      font-family: Formular-Medium;
+      margin-bottom: 1rem;
       display: block;
-      font-family: "Space Grotesk Medium";
-      font-size: .9em;
-      line-height: 1.3;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #808080; }
-    .rdwn-works-main .rdwn-work-copy p {
-      font-size: 1.3em;
+      font-size: 1.4rem;
+      line-height: 1.5; }
+    .rdwn-works-main .rdwn-work-copy ul {
+      margin: 4rem 0;
+      border: 1px solid #dcddde; }
+      .rdwn-works-main .rdwn-work-copy ul li {
+        padding: 1rem;
+        border-bottom: 1px solid #dcddde; }
+        .rdwn-works-main .rdwn-work-copy ul li h5 {
+          margin-bottom: .4rem; }
+        .rdwn-works-main .rdwn-work-copy ul li p {
+          margin-bottom: 0;
+          font-size: 1rem;
+          font-family: FormularMono;
+          letter-spacing: -.75px; }
+        .rdwn-works-main .rdwn-work-copy ul li:last-child {
+          border-bottom: none; }
+    .rdwn-works-main .rdwn-work-copy blockquote {
+      font-family: FormularMono;
+      margin: 4rem 0;
+      font-size: .8rem;
       line-height: 1.5;
-      margin-bottom: 1em; }
-      @media (max-width: 600px) {
-        .rdwn-works-main .rdwn-work-copy p {
-          font-size: 1em; } }
+      letter-spacing: -.75px;
+      border-left: 1px solid #a7a9ad;
+      padding-left: 16px; }
 
 .rdwn-read-container {
-  max-width: 40em; }
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  position: relative;
+  font-family: Formular; }
   .rdwn-read-container .rdwn-read-title {
-    font-family: "Space Grotesk Bold";
-    font-size: 1.625em;
-    margin-bottom: 1em; }
+    margin-bottom: 4rem;
+    text-align: center;
+    font-family: FormularMono;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #a7a9ad; }
     @media (max-width: 600px) {
       .rdwn-read-container .rdwn-read-title {
         font-size: 1em; } }
-  .rdwn-read-container .rdwn-read-list li {
-    border-top: 1px solid #ececec;
-    padding: .8em 0; }
-    .rdwn-read-container .rdwn-read-list li a {
-      line-height: 1.5;
-      font-size: 1.25em;
-      border-bottom: none; }
-      @media (max-width: 600px) {
-        .rdwn-read-container .rdwn-read-list li a {
-          font-size: 1em; } }
-      .rdwn-read-container .rdwn-read-list li a:hover {
-        border-bottom: 1px solid #FF2C2D; }
-
-.rdwn-sidebar {
-  position: relative;
-  font-size: .9em;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
-  .rdwn-sidebar .section-title {
-    font-weight: 600;
-    margin-bottom: 12px; }
-  .rdwn-sidebar p {
-    line-height: 1.5;
-    margin-bottom: 12px; }
-    .rdwn-sidebar p .highlight {
-      font-family: "Space Grotesk Bold"; }
-  .rdwn-sidebar a {
-    display: inline-block;
-    margin-bottom: 4px; }
-  .rdwn-sidebar small {
-    display: block;
-    line-height: 1.5; }
-  .rdwn-sidebar li {
-    list-style: none;
-    margin-bottom: 4px; }
-  .rdwn-sidebar .rdwn-current {
-    margin-bottom: 2em; }
-  .rdwn-sidebar .rdwn-github {
-    margin-bottom: 2em; }
-  .rdwn-sidebar .rdwn-books {
-    margin-bottom: 2em; }
-  .rdwn-sidebar .copyright {
-    margin-top: 4em; }
+  .rdwn-read-container .rdwn-read-list {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative; }
+    .rdwn-read-container .rdwn-read-list li {
+      position: relative;
+      width: calc(100% / 4);
+      padding: 1rem; }
+      .rdwn-read-container .rdwn-read-list li a {
+        line-height: 1.5;
+        border-bottom: none;
+        font-family: Formular-Medium; }
+        @media (max-width: 600px) {
+          .rdwn-read-container .rdwn-read-list li a {
+            font-size: 1rem; } }
+        .rdwn-read-container .rdwn-read-list li a:hover {
+          border-bottom: 1px solid #FF2C2D; }
+      .rdwn-read-container .rdwn-read-list li p {
+        margin-top: .5rem;
+        line-height: 1.5; }
+      .rdwn-read-container .rdwn-read-list li .domain {
+        margin-top: 1rem;
+        font-size: .8rem;
+        color: #a7a9ad;
+        display: block;
+        font-family: FormularMono; }
 
 .workImage {
+  max-width: calc(100% + 200px);
+  margin: 0 auto;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  position: relative; }
+  .workImage.small {
+    max-width: 768px; }
+  @media (max-width: 600px) {
+    .workImage {
+      margin: 0 1em; } }
+  .workImage img {
+    position: relative;
+    width: 100%; }
+
+.rdwn-video-container {
   max-width: calc(100% + 200px);
   margin: 0 auto;
   margin: 4em 0;
   position: relative; }
   @media (max-width: 600px) {
-    .workImage {
+    .rdwn-video-container {
       margin: 0 1em; } }
-  .workImage img {
+  .rdwn-video-container video {
     position: relative;
     width: 100%; }
 
@@ -407,12 +357,63 @@ a {
 
 footer {
   display: flex;
-  flex-flow: column; }
+  flex-flow: row;
+  margin-top: 4rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-family: Formular; }
+  footer .rdwn-socials ul {
+    display: inline-block; }
   footer .rdwn-socials li {
     list-style: none;
     margin-left: 0;
-    display: block; }
+    display: inline-block; }
     footer .rdwn-socials li a {
-      margin-right: 2em; }
+      margin-right: 1em; }
+  footer .copyright {
+    margin-left: auto; }
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 12px; }
+
+  .rdwn-grid-container {
+    padding: 0; }
+
+  .rdwn-header .rdwn-name {
+    font-size: 1.4rem; }
+
+  .rdwn-header .rdwn-links {
+    text-align: right; }
+    .rdwn-header .rdwn-links li {
+      display: block; }
+
+  .rdwn-bio_copy .rdwn-bio-subsection h4 {
+    line-height: 1.5; }
+
+  .rdwn-bio_copy .rdwn-bio_copy__main {
+    font-size: 2rem; }
+
+  .rdwn-bio_copy .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
+    font-size: 1rem; }
+
+  .rdwn-bio_copy .rdwn-bio-subsection .rdwn-project-titles {
+    font-size: 2rem; }
+
+  .rdwn-bio_copy p {
+    font-size: 1.4rem; }
+
+  footer {
+    flex-flow: column; }
+
+  footer .copyright {
+    margin-left: 0;
+    margin-top: 1rem; }
+
+  .rdwn-works-main .brief .title {
+    font-size: 2rem; } }
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 16px; } }
 
 /*# sourceMappingURL=main.css.map */
