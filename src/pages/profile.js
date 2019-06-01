@@ -41,7 +41,7 @@ const Profile = (props) => (
                         </p>
                         <p>We use various methods of user research, design thinking processes and a/b testing to understand the problem space and validate our ideas, to improve the experience of our users.</p>
 
-                        <p>My role as a designer revolves around facilitating design thinking processes, leading strategic design decisions and producing various ux artefacts that help the team solve our customers’ and partners’ pain points while finding opportunities for business growth.</p>
+                        <p>My role as a designer revolves around facilitating design thinking sessions, leading strategic design decisions and producing various ux artefacts that help the team solve our customers’ and partners’ pain points while finding opportunities for business growth.</p>
                     </div>
 
 
@@ -50,12 +50,12 @@ const Profile = (props) => (
 
                     <h4>UI/UX Designer at icflix.com, Dubai</h4>
                     <p>A content streaming startup that offers Arabic, Hollywood and Bollywood contents in the Middle East.</p>
-                    <p>I played a major role in the design strategy of these platforms. I helped design designs for various platforms and worked closely with the engineering team, marketing team and otehr stakeholders to deliver these designs the world. </p>
+                    <p>I played a major role in the design strategy of these platforms. I helped design for various platforms and worked closely with the engineering team, marketing team and otehr stakeholders to deliver these designs the world. </p>
 
                     </div>
 
                     <div className="rdwn-bio-subsection">
-                        <h3 className="rdwn-bio_copy__smalltitle">Active Side Projects</h3>
+                        <h3 className="rdwn-bio_copy__smalltitle">Ongoing Side Projects</h3>
 
                         <p><a href="https://quran-curious-mind.netlify.com/">Quran for the curious minds</a>, <a href="https://github.com/rosanusi/project_journal">Project Journal</a>, <a href="https://github.com/rosanusi/notes">Notes App</a>, <a href="https://github.com/rosanusi/watchbox">Watchbox</a></p>
 
