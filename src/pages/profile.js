@@ -50,7 +50,7 @@ const Profile = (props) => (
 
                     <h4>UI/UX Designer at icflix.com, Dubai</h4>
                     <p>A content streaming startup that offers Arabic, Hollywood and Bollywood contents in the Middle East.</p>
-                    <p>I played a major role in the design strategy of these platforms. I helped design for various platforms and worked closely with the engineering team, marketing team and otehr stakeholders to deliver these designs the world. </p>
+                    <p>I helped design for various platforms and worked closely with the engineering team, marketing team and otehr stakeholders to deliver these designs the world. </p>
 
                     </div>
 
