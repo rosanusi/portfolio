@@ -97,6 +97,9 @@ p {
 
 .rdwn-wrap {
     padding : 2rem;
+    min-height : 100vh;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .rdwn-grid-container {
@@ -107,6 +110,7 @@ p {
     grid-template-rows: repeat(auto);
     margin: 0 auto;
     margin-top: 10em;
+    margin-bottom: 10em;
 
     @media screen and (max-width: 900px) { 
         grid-template-columns: 1fr;
@@ -236,6 +240,11 @@ p {
     text-transform: uppercase;
     letter-spacing: 1px;
     color : $light-body-color;
+}
+
+
+.rdwn-container-works {
+    margin-bottom : 10rem;
 }
 
 .rdwn-works-main {
@@ -456,11 +465,11 @@ p {
 footer {
     display: flex;
     flex-flow: row;
-    margin-top : 4rem;
+    margin-top: auto;
     font-size : 1.2rem;
     line-height : 1.5;
     font-family: Formular;
-
+    place-self: auto;
 
     .rdwn-socials {
 

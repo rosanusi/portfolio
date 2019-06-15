@@ -128,7 +128,10 @@ p {
   margin-bottom: 1rem; }
 
 .rdwn-wrap {
-  padding: 2rem; }
+  padding: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap; }
 
 .rdwn-grid-container {
   position: relative;
@@ -137,7 +140,8 @@ p {
   width: 100%;
   grid-template-rows: repeat(auto);
   margin: 0 auto;
-  margin-top: 10em; }
+  margin-top: 10em;
+  margin-bottom: 10em; }
   @media screen and (max-width: 900px) {
     .rdwn-grid-container {
       grid-template-columns: 1fr;
@@ -215,6 +219,9 @@ p {
   text-transform: uppercase;
   letter-spacing: 1px;
   color: #a7a9ad; }
+
+.rdwn-container-works {
+  margin-bottom: 10rem; }
 
 .rdwn-works-main {
   max-width: 1200px;
@@ -358,10 +365,11 @@ p {
 footer {
   display: flex;
   flex-flow: row;
-  margin-top: 4rem;
+  margin-top: auto;
   font-size: 1.2rem;
   line-height: 1.5;
-  font-family: Formular; }
+  font-family: Formular;
+  place-self: auto; }
   footer .rdwn-socials ul {
     display: inline-block; }
   footer .rdwn-socials li {
