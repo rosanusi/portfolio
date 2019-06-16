@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class footer extends Component {
   render() {
     return (
-        <footer>
+        <footer className="mainFooter">
           
           <ul className="rdwn-socials">
             <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
