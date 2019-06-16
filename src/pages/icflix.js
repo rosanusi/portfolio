@@ -33,7 +33,7 @@ const Icflix = (props) => (
 
             <div className="rdwn-work-copy">
                 <h6 className="small-title">Responsibility</h6>
-                <p>Being a UX team of one and a startup where everyone's looking at design to lead the way, I was responsible for the design direction of the project. I collaborated with the product manager in defining the scope of the project and setting priorities. I delivered all ux artefacts for the project including the viual design of the "final" product.</p>
+                <p>Being a UX team of one and in a startup where everyone's looking at design to lead the way, I was responsible for the design direction of the project. I collaborated with the product manager in defining the scope of the project and setting priorities. I delivered all ux artefacts for the project including the viual design of the "final" product.</p>
                 <p>Having a tight deadline to get the new version to the market, we had to do minimal research at the beginning to understand the problem to solve and relied on lean approach to iteratively bring updates to the app.</p>
             </div>
 

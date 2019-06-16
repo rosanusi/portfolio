@@ -21,9 +21,9 @@ const Preferred = (props) => (
                 <div className="brief">
                     <h2 className="title">Product Improvement for Booking.com Partner Program</h2>
                     <span className="date">2018</span>
-                    <p> Preferred Partner is an exclusive status we offer to our high-performing properties. Preferred properties get extra visibility in the search results and a badge. A larger number of customers can see that we recommend your property as one performing well on Booking.com – and one that’s popular with bookers.</p>
+                    <p> At booking, Preferred Partner is an exclusive status we offer to our high-performing properties. Preferred properties get extra visibility in the search results and a badge. A larger number of customers can see that we recommend these properties because of their performance – and that they are popular with bookers.</p>
 
-                    <p>This is a case study on a project I worked on that is internal facing to the partners of booking.com. As a result, I have anonymized the data and only talked about the external part of the project.</p>
+                    <p>This is a case study on a project I worked on that is internal facing at booking.com. As a result, I have anonymized the data and only talked about the external parts of the project.</p>
                 </div>
             </div>
 
@@ -37,7 +37,7 @@ const Preferred = (props) => (
                     I worked within an agile team of 6 consisting of the product manager, marketing manager, researcher, ux writer, client-side developer and backend developer. 
                 </p>
                 <p>
-                I was responsible for the design direction of the project. Organized project kick-off with support from the product manager.  Collaborated with the researcher to further understand the problem and validate proposed solution. Organized brainstorming sessions and design workshops. Collaborated with the ux writer and marketing manager on the copy strategy of the product and delivered final designs.
+                I was responsible for the design direction of the project. Organized project kick-off with support from the product manager.  Collaborated with the researcher to further understand the problem and validate proposed solution. Organized brainstorming sessions and design workshops. Collaborated with the ux writer and marketing manager on the marketing strategy of the product and delivered final designs.
 
                 </p>
             </div>
@@ -45,7 +45,7 @@ const Preferred = (props) => (
             <div className="rdwn-work-copy">
                 <h6 className="small-title">Problem</h6>
             
-                <p>From a “partner awareness survey” ran by our researchers, we understood that partners were not aware of the existence of the program . Some others were not happy with it. When asked why they are not satisfied, three major points came up the most;</p>
+                <p>From a “partner awareness survey” ran by our researchers, we understood that some partners were not aware of the existence of the program. Some others were not happy with it. When asked why they are not satisfied, three major points came up the most;</p>
 
             </div>
 
@@ -57,7 +57,7 @@ const Preferred = (props) => (
 
             <div className="rdwn-work-copy">
                 <h6 className="small-title">Better understanding</h6>
-                <p>It was important to further understand our partners' paint points. We decided to do a partner visit to one of the cities with highest representation of preferred partners to interview some of them. We also organized a remote user interview to talk to more preferred partners from different markets.</p>
+                <p>It was important to further understand our partners' paint points. So, we decided to do a partner visit to one of the cities with highest representation of preferred partners to interview some of them. We also organized a remote user interview to talk to more preferred partners from different markets.</p>
 
                 <p>Based on the feedback from the interviews, the user researcher came up with the major insights from the research.</p>
 
