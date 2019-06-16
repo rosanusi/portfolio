@@ -48,7 +48,7 @@ const Profile = (props) => (
                     <div className="rdwn-bio-subsection">
                     <h3 className="rdwn-bio_copy__smalltitle">Previously (2013 - 2016)</h3>
 
-                    <h4>UI/UX Designer at icflix.com, Dubai</h4>
+                    <h4>User Experience designer at icflix.com, Dubai</h4>
                     <p>A content streaming startup that offers Arabic, Hollywood and Bollywood contents in the Middle East.</p>
                     <p>I helped design for various platforms and worked closely with the engineering team, marketing team and otehr stakeholders to deliver these designs the world. </p>
 
