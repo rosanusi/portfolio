@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby'
-import anime from 'animejs'
 
 
 class hero extends Component {
