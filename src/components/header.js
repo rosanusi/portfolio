@@ -10,7 +10,7 @@ const Header = ({ siteTitle }) => (
       {/* {siteTitle} */}
       <h1>Busola Sanusi</h1>
       <small>
-        Digital Product Designer
+        User Experience Designer
       </small>
     </Link>
 

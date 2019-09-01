@@ -7,7 +7,7 @@ export default class nav extends Component {
     <div className="rdwn-header_floated">
       
         <div className="rdwn-name">
-          <h1 className="title push-right"><Link to="/">Busola Sanusi</Link> <span>— Digital Product Designer</span></h1>
+          <h1 className="title push-right"><Link to="/">Busola Sanusi</Link> <span>— User Experience Designer</span></h1>
         </div>
 {/*   
         <ul className="rdwn-nav">

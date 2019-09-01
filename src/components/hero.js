@@ -25,7 +25,7 @@ class hero extends Component {
                         <div className="rdwn-bio-subsection">
                             <h2 className="rdwn-bio_copy__smalltitle">Selected past projects</h2>
                             <p className="rdwn-project-titles">
-                                {/* <Link to="/preferred">Program dashboard design</Link>, */}
+                                <Link to="/preferred">Program dashboard design</Link>,
                                 <Link to="/icflix">Smart TV app redesign</Link>, <Link to="/icflixvideo">Custom web video player revamp</Link>, <Link to="/enaviga">Partner platform for Boat rental service</Link>
                             </p>
                         </div>
