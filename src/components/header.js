@@ -8,17 +8,12 @@ const Header = ({ siteTitle }) => (
 
     <Link to="/" className="rdwn-name">
       {/* {siteTitle} */}
-      <h1>Busola Sanusi</h1>
-      <small>
-        User Experience Designer
-      </small>
+      <h1>Ridwan Sanusi <span class="title">↬ Product Designer</span></h1>
     </Link>
 
     <ul className="rdwn-links">
-      <li><Link to="/profile">Profile</Link></li>
-      <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/busolarsanusi/" rel="noopener noreferrer" target="_blank">Linkedin</a></li>
-      <li><a href="https://github.com/rosanusi?tab=repositories" rel="noopener noreferrer" target="_blank">Github</a></li>
+      <li><Link to="/profile">About</Link></li>
+      <li><a href="https://www.linkedin.com/in/busolarsanusi/" rel="noopener noreferrer" target="_blank">Resume</a></li>
     </ul>
 
   </header>

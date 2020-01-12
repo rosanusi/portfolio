@@ -4,7 +4,6 @@ export default class books extends Component {
   render() {
     return (
       <div className="rdwn-books">
-        <h6 className="section-title">Currently reading</h6>
 
         <ul className="rdwn-books-grid">
           <li>

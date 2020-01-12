@@ -32,35 +32,37 @@
 @import url("//hello.myfonts.net/count/39778f");
 
  
-@font-face {font-family: 'Formular';src: url('../webfonts/39773E_0_0.eot');src: url('../webfonts/39773E_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_0_0.woff2') format('woff2'),url('../webfonts/39773E_0_0.woff') format('woff'),url('../webfonts/39773E_0_0.ttf') format('truetype'),url('../webfonts/39773E_0_0.svg#wf') format('svg');}
-@font-face {font-family: 'Formular-Medium';src: url('../webfonts/39778F_0_0.eot');src: url('../webfonts/39778F_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39778F_0_0.woff2') format('woff2'),url('../webfonts/39778F_0_0.woff') format('woff'),url('../webfonts/39778F_0_0.ttf') format('truetype');}
-@font-face {font-family: 'FormularMono';src: url('../webfonts/39773E_1_0.eot');src: url('../webfonts/39773E_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_1_0.woff2') format('woff2'),url('../webfonts/39773E_1_0.woff') format('woff'),url('../webfonts/39773E_1_0.ttf') format('truetype'),url('../webfonts/39773E_1_0.svg#wf') format('svg');}
+// @font-face {font-family: 'Formular';src: url('../webfonts/39773E_0_0.eot');src: url('../webfonts/39773E_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_0_0.woff2') format('woff2'),url('../webfonts/39773E_0_0.woff') format('woff'),url('../webfonts/39773E_0_0.ttf') format('truetype'),url('../webfonts/39773E_0_0.svg#wf') format('svg');}
+// @font-face {font-family: '"FK Grotesk Bold"';src: url('../webfonts/39778F_0_0.eot');src: url('../webfonts/39778F_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39778F_0_0.woff2') format('woff2'),url('../webfonts/39778F_0_0.woff') format('woff'),url('../webfonts/39778F_0_0.ttf') format('truetype');}
+// @font-face {font-family: 'FormularMono';src: url('../webfonts/39773E_1_0.eot');src: url('../webfonts/39773E_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_1_0.woff2') format('woff2'),url('../webfonts/39773E_1_0.woff') format('woff'),url('../webfonts/39773E_1_0.ttf') format('truetype'),url('../webfonts/39773E_1_0.svg#wf') format('svg');}
 
-.Formular { 
-	font-family: Formular;
-	font-weight: normal;
-	font-style: normal;
+
+
+@font-face {
+    font-family:"FK Grotesk Regular";
+    src:url("../webfonts/FKGrotesk-Regular.woff2") format("woff2"),url("../webfonts/FKGrotesk-Regular.woff") format("woff");
+    font-style:normal;font-weight:400;
 }
 
-.Formular-Medium { 
-	font-family: Formular-Medium;
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family:"FK Grotesk Monospaced";
+    src:url("../webfonts/FKGrotesk-Monospaced.woff2") format("woff2"),url("../webfonts/FKGrotesk-Monospaced.woff") format("woff");
+    font-style:normal;font-weight:400;
 }
 
-.FormularMono { 
-	font-family: FormularMono;
-	font-weight: normal;
-	font-style: normal;
+@font-face {
+    font-family:"FK Grotesk Bold";
+    src:url("../webfonts/FKGrotesk-Bold.woff2") format("woff2"),url("../webfonts/FKGrotesk-Bold.woff") format("woff");
+    font-style:normal;font-weight:400;
 }
 
 
 
 // Color
-$display-color : #141414;
-$body-color : #292a2c;
+$display-color : #10101c;
+$body-color : #10101c;
 $light-body-color: lighten( $body-color, 50% );
-$primary-color : #FF2C2D;
+$primary-color : #3c5ee4;
 
 
 html {
@@ -71,13 +73,14 @@ html, body {
     height: 100%;
     color :$body-color;
     background-color: #fff; 
+	font-family:"FK Grotesk Regular";
     -webkit-font-smoothing : antialiased;
 }
 
 
 a:not(.rdwn-name) {
     color : $body-color;
-    border-bottom : 1px solid lighten( $body-color, 75% );
+    border-bottom : 1px solid lighten( $body-color, 80% );
     text-decoration : none;
     cursor: pointer;
 
@@ -89,45 +92,133 @@ a:not(.rdwn-name) {
 
 
 p {
-    font-family: Formular;
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 1rem;
+    font-size: 1.4em;
+    line-height: 1.6;
+    margin-bottom: 1em;
+
+
+    @media (max-width: 600px) {
+        font-size : 1em;
+    }   
+
 }
 
 .rdwn-wrap {
-    padding : 2rem;
+    max-width: calc(90em + 5em);
+    width: 100%;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
     min-height : 100vh;
+    margin: 0 auto;
     display: flex;
     flex-flow: column nowrap;
+
+
+    @media (max-width: 600px) { 
+        padding-left: 1.25em;
+        padding-right: 1.25em;
+    }
 }
+
+.rdwn-bio_copy__name {
+
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin-bottom : 1em;
+}
+
 
 .rdwn-grid-container {
     position : relative;
     display : grid;
-    max-width: 60rem;
+    max-width: calc(60em + 5em);
     width: 100%;
-    grid-template-rows: repeat(auto);
-    margin: 0 auto;
-    margin-top: 10em;
-    margin-bottom: 10em;
+    grid-template-rows: auto;
+    grid-template-columns: .9fr .6fr;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+    margin: auto auto;
 
-    @media screen and (max-width: 900px) { 
-        grid-template-columns: 1fr;
-        grid-template-rows:  auto;
-        grid-gap: 2em;
-        padding: 0 2em;
+    .rdwn-bio_copy__main, .rdwn-bio_copy__sub {
+        grid-column: 1/span 2;
     }
+
+    .rdwn-bio-subsection  {
+        grid-column: 1/span 2;
+    }
+
+    &.profile {
+        margin-top: 10em;
+
+        @media screen and (max-width: 600px) { 
+            margin-top: 5em;
+        }
+    }
+
+
+    @media screen and (max-width: 600px) { 
+        padding: 0;
+        grid-template-columns: 1fr;
+        // margin-top: 5em;
+        // margin-bottom: 5em;
+    }
+    
+    // @media screen and (max-width: 900px) { 
+    //     grid-template-columns: 1fr;
+    //     grid-template-rows:  auto;
+    //     grid-gap: 2em;
+    //     padding: 0 2em;
+    // }
+    
 }
 
+
+.smalltitle {
+    font-family: "FK Grotesk Monospaced";
+    font-size : .8em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom : 1em;
+    line-height: 1.6;
+    color : #7b7d81;
+    display: block;
+}
+
+.rdwn-profile-container {
+    position : relative;
+    display : grid;
+    max-width: 60em;
+    width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: .9fr .6fr;
+    grid-gap: 4em;
+    margin: 5em auto;
+
+    p {
+        margin-bottom: 2em;
+    }
+
+    @media screen and (max-width: 600px) { 
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        margin: 2.5em auto;
+    }
+
+}
 
 
 .rdwn-header {
     display : flex;
-    font-size : 1.2rem;
-    line-height : 1.5;
-    margin-top : 5px;
-    font-family: Formular;
+    font-size : 1.2em;
+    line-height : 1;
+    padding-top : 2.5em;
+
+    @media screen and (max-width: 600px) { 
+        padding-top: 1.25em;
+        font-size: 1em;
+    }
+
+
 
 
     .rdwn-name {
@@ -135,8 +226,13 @@ p {
         text-decoration : none;
         color : $body-color;
 
-        small {
-            color : $light-body-color;
+        span {
+            color : #a0a0a0;
+            // color: #aaa;
+        }
+
+        &:hover {
+            color: $primary-color;
         }
     }
 
@@ -145,7 +241,7 @@ p {
 
         li {
             display: inline-block;
-            margin-left : 12px;
+            margin-left : 1.25em;
         }
     }
 }
@@ -162,108 +258,188 @@ p {
     }
 }
 
-// .rdwn-main-section {
-//     grid-column-start : 1;
-//     grid-column-end : 3;
+.rdwn-main-section {
+
+    .workImage {
+        max-width: 20em;
+        margin: 4em auto;
+
+        @media screen and (max-width: 600px) { 
+            max-width: 15em;
+        }
+
+
+        .img-container {
+            -webkit-box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.12);
+            -moz-box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.12);
+            box-shadow: 10px 10px 0px -3px rgba(0,0,0,0.12);
+            border-radius : 8px;
+        }
+
+    }
+}
+
+.rdwn-bio_copy__main{
+    font-size: 3em;
+    line-height: 1.3;
+    margin-bottom: 0;
+    font-kerning: normal;
+    letter-spacing: -0.8px;
+
+    @media screen and (max-width: 600px) { 
+        font-size: 1.5em;
+        letter-spacing: 0;
+
+    }
+}
+
+
+// a.rdwn-bio-link {
+//     border-bottom: none;
+//     // font-size : 1.4em;
 // }
 
+.rdwn-bio-subsection {
+    margin-top: 2.5em;
 
-.rdwn-bio_copy {
-    margin-top: -.8rem;
-
-    p { 
-        @media (max-width: 600px) {
-            font-size : 1.2rem;
-        }   
+    @media screen and (max-width: 600px) { 
+        margin-top: 1.25em;
     }
 
-    .rdwn-bio_copy__main {
-        font-size : 2.8rem;  
-        line-height: 1.4;  
-        letter-spacing: -.75px;
-        margin-bottom: 3rem;
+    .rdwn-bio_copy__smalltitle {
+        font-family: "FK Grotesk Monospaced";
+        font-size : .9em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-bottom : 1em;
+
+        @media screen and (max-width: 600px) { 
+            font-size: .7em;
+            margin-bottom: .5em;
+        }
+
     }
 
+    h4 {
+        font-family : "FK Grotesk Bold";
+        font-size : 1.5rem;
+        margin-bottom : 1rem;
+    }
 
-    .rdwn-bio-subsection {
-        font-family: Formular;
-        margin-top : 4rem;
+    .rdwn-project-titles {
+        font-size : 1.4em;
+        line-height: 1.8;
 
-        .rdwn-bio_copy__smalltitle {
-            font-family: FormularMono;
-            font-size : 1.4rem;
-            margin-bottom : 2rem;
+        @media screen and (max-width: 600px) { 
+            font-size: 1em;
         }
-
-        h4 {
-            font-family : Formular-Medium;
-            font-size : 1.5rem;
-            margin-bottom : 1rem;
-        }
-
-        .rdwn-project-titles {
-            font-size : 2.8rem;
-            margin-bottom: 1.5rem;
-        }
-
     }
 
 }
 
-.rdwn-bio_copy {
 
-    &.profile {
+.rdwn-profile-sidebar {
+    margin-bottom: 5em;
 
-        max-width: calc(768px - 2rem);
-        width: 100%;    
-        margin: 0 auto;
+    .smalltitle {
+        margin-bottom: 0;
+    }
 
-        .rdwn-bio_copy__main {
-            font-family : Formular-Medium;
-        }
+    .xp-title {
 
-        .rdwn-bio_copy__smalltitle {
-            text-transform: uppercase;
-            font-size: 1rem;
-            color : $light-body-color;
-            text-transform: uppercase;
-            letter-spacing: 1px;
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 1.5em;
+
+        a {
+
+            // &:first-child{
+            //     color : #f4a91e;
+            // }
+
+            // &:nth-child(2){
+            //     color : #0184fa;
+            // }
         }
     }
+
 }
+
+.rdwn-bio_copy__sub {
+    margin-top: 1.25em;
+    font-size : 1.4em;
+    line-height: 1.6;
+
+    @media (max-width: 600px) { 
+        font-size : 1em;
+    }    
+}
+
 
 
 
 .rdwn-pagetitle {
     margin-bottom : 4rem;
     text-align: center;
-    font-family: FormularMono;
+    font-family: "FK Grotesk Monospaced";
     text-transform: uppercase;
     letter-spacing: 1px;
     color : $light-body-color;
 }
 
 
-.rdwn-container-works {
-    margin-bottom : 10rem;
+.rdwn-work-head {
+    position : relative;
+    display : grid;
+    max-width: 60em;
+    width: 100%;
+    grid-template-rows: auto;
+    grid-template-columns: .6fr .9fr;
+    margin: 0 auto;
+    margin-top: 10em;
+
+
+    @media (max-width: 600px) { 
+        margin-top: 5em;
+    }    
+
+    .rdwn-bio_copy__main {
+        grid-column: 1/span 2;
+        // margin-bottom : 1.5em;
+
+    }
+
+    // .rdwn-bio_copy__name, .details {
+    //     grid-column: 2 / span 1;
+    //     margin-bottom : 0;
+    // }
+
+    .meta {
+        font-family: "FK Grotesk Monospaced";
+        display: block;
+        margin-bottom : 2em;
+        color : #808080;
+    }
 }
 
+
+
 .rdwn-works-main {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top : 4rem;
-    position: relative;
-    font-family: Formular;
+
 
     .brief {
         width: 100%;
         margin-right : 4rem;
 
         .title {
-            font-family: Formular-Medium;
             font-size : 2.8rem;
-            letter-spacing: -.75px;
-            line-height : 1.4;
+            line-height : 1.2;
             margin-bottom : 1.5rem;
             text-align : center;
         }
@@ -272,7 +448,7 @@ p {
             color: $light-body-color;
             display: block;
             text-align: center;
-            font-family: FormularMono;
+            font-family: "FK Grotesk Monospaced";
             margin-bottom : 1.5rem;
         }
 
@@ -280,21 +456,44 @@ p {
 
 
     .rdwn-work-copy {
-        max-width: calc(768px - 2rem);
-        width: 100%;    
-        margin: 0 auto;
-        margin-top: 3rem;
+        position : relative;
+        display : grid;
+        max-width: 40em;
+        width: 100%;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        margin: 8em auto;
 
-        .small-title {
-            font-family: Formular-Medium;
+        @media (max-width: 600px) {             
+            margin: 4em auto;
+        }   
+        
+        .title {
             margin-bottom : 1rem;
             display: block;
-            font-size: 1.4rem;
-            line-height:  1.5;
-            // text-transform: uppercase;
-            // letter-spacing: 1px;
-            // color: $light-body-color;
+            font-size: 2em;
+            line-height:  1.3;
+
+            @media (max-width: 600px) {             
+            font-size: 1.4em;
+            }   
         }
+
+        &.big {
+            grid-template-columns: .8fr;
+            line-height: 1.3;
+
+            p {
+                font-size : 1.8em;
+            }
+    
+        }
+        
+
+        // .details {
+        //     grid-column: 1/span 2;
+        // }
+
 
         ul {
             margin : 4rem 0;
@@ -312,7 +511,7 @@ p {
                 p {
                     margin-bottom : 0;
                     font-size: 1rem;
-                    font-family: FormularMono;
+                    font-family: "FK Grotesk Monospaced";
                     letter-spacing: -.75px;
                 }
 
@@ -323,7 +522,7 @@ p {
         }
 
         blockquote {
-            font-family: FormularMono;
+            font-family: "FK Grotesk Monospaced";
             margin : 4rem 0;
             font-size : .8rem;
             line-height: 1.5;
@@ -343,13 +542,12 @@ p {
     margin: 0 auto;
     margin-top : 4rem;
     position: relative;
-    font-family: Formular;
 
 
     .rdwn-read-title {
         margin-bottom : 4rem;
         text-align: center;
-        font-family: FormularMono;
+        font-family: "FK Grotesk Monospaced";
         text-transform: uppercase;
         letter-spacing: 1px;
         color : $light-body-color;
@@ -374,7 +572,7 @@ p {
                 line-height : 1.5;
                 // font-size : 1.25em;
                 border-bottom : none;
-                font-family: Formular-Medium;
+
 
                 @media (max-width: 600px) { 
                     font-size : 1rem;
@@ -396,7 +594,7 @@ p {
                 font-size: .8rem;
                 color : $light-body-color;
                 display: block;
-                font-family: FormularMono;
+                font-family: "FK Grotesk Monospaced";
             }
         }
     }
@@ -404,20 +602,22 @@ p {
 }
 
 .workImage {
-    max-width: calc(100% + 200px);
-    margin: 0 auto;
-    margin-top: 4em;
-    margin-bottom: 4em;
+    max-width: 80em;
+    margin : 8em auto;
     position:relative;
+    background-color: #eeeeee ;
+
+
+    @media (max-width: 600px) { 
+        margin : 4em auto;
+    }
+
 
     &.small {
         max-width: 768px;
         // margin: 0 auto;
     }
 
-    @media (max-width: 600px) { 
-        margin: 0 1em;
-    }
 
     img {
         position: relative;
@@ -428,13 +628,12 @@ p {
 
 
 .rdwn-video-container {
-    max-width: calc(100% + 200px);
-    margin: 0 auto;
-    margin: 4em 0;
+    max-width: 80em;
+    margin : 8em auto;
     position:relative;
 
     @media (max-width: 600px) { 
-        margin: 0 1em;
+        margin : 4em auto;
     }
 
     video {
@@ -463,13 +662,18 @@ p {
 }
 
 
+.rdwn-books-grid {
+    line-height: 1.6;
+}
+
+
 footer {
     display: flex;
     flex-flow: row;
-    margin-top: auto;
+    // margin-top: auto;
+    padding-bottom: 2.5em;
     font-size : 1.2rem;
     line-height : 1.5;
-    font-family: Formular;
     place-self: auto;
 
     .rdwn-socials {
@@ -493,69 +697,73 @@ footer {
     .copyright {
         margin-left : auto;
     }
-
-}
-
-
-
-@media screen and (max-width: 600px) {
-    html {
-    font-size: 12px;
-    }
-
-
-    .rdwn-grid-container {
-        padding : 0;
-    }
-
-    .rdwn-header .rdwn-name{
-        font-size : 1.4rem;
-    }
-
-    .rdwn-header .rdwn-links {
-        text-align: right; 
-
-        li {
-            display: block;
-        }
-    }
-
-
-    .rdwn-bio_copy .rdwn-bio-subsection h4 {
-        line-height: 1.5;
-    }
-
-    .rdwn-bio_copy .rdwn-bio_copy__main {
-        font-size: 2rem;
-    }
-
-    .rdwn-bio_copy .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
-        font-size: 1rem;
-    }
-
-    .rdwn-bio_copy .rdwn-bio-subsection .rdwn-project-titles {
-        font-size: 2rem;
-    }
-
-    .rdwn-bio_copy p {
-        font-size : 1.4rem;
-    }
-
-
-    footer {
-        flex-flow: column;
-    }
-
-    footer .copyright {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
-
-
-    .rdwn-works-main .brief .title {
-        font-size: 2rem;
+    
+    @media screen and (max-width: 600px) { 
+        padding-bottom: 1.25em;
+        font-size : 1em;
     }
 }
+
+
+
+// @media screen and (max-width: 600px) {
+//     html {
+//     font-size: 12px;
+//     }
+
+
+//     .rdwn-grid-container {
+//         padding : 0;
+//     }
+
+//     .rdwn-header .rdwn-name{
+//         font-size : 1.2em;
+//     }
+
+//     .rdwn-header .rdwn-links {
+//         text-align: right; 
+
+//         li {
+//             display: block;
+//         }
+//     }
+
+
+//     .rdwn-bio_copy .rdwn-bio-subsection h4 {
+//         line-height: 1.5;
+//     }
+
+//     .rdwn-bio_copy .rdwn-bio_copy__main {
+//         font-size: 2rem;
+//     }
+
+//     .rdwn-bio_copy .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
+//         font-size: 1rem;
+//     }
+
+//     .rdwn-bio_copy .rdwn-bio-subsection .rdwn-project-titles {
+//         font-size: 2rem;
+//     }
+
+//     .rdwn-bio_copy p {
+//         font-size : 1.2em;
+//     }
+
+
+//     footer {
+//         flex-flow: column;
+//     }
+
+//     footer .copyright {
+//         margin-left: 0;
+//         margin-top: 1rem;
+//     }
+
+
+//     .rdwn-works-main .brief .title {
+//         font-size: 2rem;
+//     }
+// }
 
 
 

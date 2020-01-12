@@ -29,6 +29,14 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        useMozJpeg: true,
+        stripMetadata: true,
+        defaultQuality: 100,
+      }
+    },
+    {
       resolve: `gatsby-source-pocket`,
       options: {
         consumerKey: "84807-6782aaae4c71830e0e6d7099",
