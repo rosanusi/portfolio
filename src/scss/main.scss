@@ -226,7 +226,10 @@ p {
         text-decoration : none;
         color : $body-color;
 
-        span {
+        .title {
+            font-size: .8em;
+            display: block;
+            margin-top: 4px;
             color : #a0a0a0;
             // color: #aaa;
         }

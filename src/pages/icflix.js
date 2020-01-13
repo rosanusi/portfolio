@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Nav from '../components/nav'
+// import Nav from '../components/nav'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import mainVideo from '../video/icflixsmart.mp4'
@@ -10,7 +10,7 @@ import videoProto1 from '../video/icflix-horizontal.mp4'
 
 const Icflix = (props) => (
 <Layout>
-    <SEO title="Busola Sanusi | Redesign of icflix Smart TV app" />
+    <SEO title="Ridwan Sanusi | Redesign of icflix Smart TV app" />
     
 
 

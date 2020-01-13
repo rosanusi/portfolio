@@ -239,7 +239,10 @@ p {
   text-decoration: none;
   color: #10101c;
 }
-.rdwn-header .rdwn-name span {
+.rdwn-header .rdwn-name .title {
+  font-size: 0.8em;
+  display: block;
+  margin-top: 4px;
   color: #a0a0a0;
 }
 .rdwn-header .rdwn-name:hover {

@@ -2,13 +2,13 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Nav from '../components/nav'
+// import Nav from '../components/nav'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 const Swiffix = (props) => (
   <Layout>
-    <SEO title="Busola Sanusi | Connecting People with verified professional handymen" />
+    <SEO title="Ridwan Sanusi | Connecting People with verified professional handymen" />
     
 
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
+// import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import Books from '../components/books'
@@ -8,7 +8,7 @@ import Books from '../components/books'
 
 const Profile = (props) => (
     <Layout>
-        <SEO title="icflix.com | Middle East Movie streaming platform" />
+        <SEO title="Ridwan Sanusi | Profile" />
 
         <div className="rdwn-grid-container profile">
 

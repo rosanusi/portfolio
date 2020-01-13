@@ -9,7 +9,7 @@ import mainVideo from '../video/pref.mp4'
 
 const Preferred = (props) => (
   <Layout>
-    <SEO title="Busola Sanusi | Dashboard for booking.com's Preferred Partners" />
+    <SEO title="Ridwan Sanusi | Dashboard for booking.com's Preferred Partners" />
     
 
     <div className="rdwn-container-works">
@@ -107,7 +107,7 @@ const Preferred = (props) => (
 
                 <div className="details">
 
-                    <p>I facilitated another design session with the whole team to explore <span classname="highlight">“how might we show our partners the value of being a preferred member?”</span>.  This time, we used the silent brainstorming technique to allow people bring in divergent ideas. Each participants pasted their post-its and explained the ideas to the rest of us. Afterwards, we did dot-voting on the post-its to help us converge on one proposed solution;</p>
+                    <p>I facilitated another design session with the whole team to explore <span className="highlight">“how might we show our partners the value of being a preferred member?”</span>.  This time, we used the silent brainstorming technique to allow people bring in divergent ideas. Each participants pasted their post-its and explained the ideas to the rest of us. Afterwards, we did dot-voting on the post-its to help us converge on one proposed solution;</p>
 
                     {/* <blockquote>
                         <p>“We will create a dashboard that shows our partners the ROI of being a preferred member.  We believe seeing a positive result will convince our partners that being in the program is indeed valuable to their business. Thus, less partners will leave the program.”</p>

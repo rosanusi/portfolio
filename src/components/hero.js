@@ -31,8 +31,3 @@ class hero extends Component {
 }
 
 export default hero;
-
-
-
-
-{/* <span className="divider">⨯</span>  <Link to="/icflixvideo">Custom web video player revamp</Link> <span className="divider">⨯</span> <Link to="/enaviga">Partner platform for Boat rental service</Link>  */}

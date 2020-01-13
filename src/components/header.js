@@ -8,7 +8,8 @@ const Header = ({ siteTitle }) => (
 
     <Link to="/" className="rdwn-name">
       {/* {siteTitle} */}
-      <h1>Ridwan Sanusi <span class="title">↬ Product Designer</span></h1>
+      <h1>Ridwan Sanusi</h1>
+      {/* <span class="title">↬ Product Designer</span> */}
     </Link>
 
     <ul className="rdwn-links">
