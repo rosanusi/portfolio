@@ -586,14 +586,15 @@ footer {
   display: flex;
   flex-flow: row;
   padding-bottom: 2.5em;
-  font-size: 1.2rem;
+  font-size: 1em;
   line-height: 1.5;
   place-self: auto;
+  color: #707070;
 }
 @media screen and (max-width: 600px) {
   footer {
     padding-bottom: 1.25em;
-    font-size: 1em;
+    font-size: 0.9em;
   }
 }
 footer .rdwn-socials ul {
@@ -605,6 +606,7 @@ footer .rdwn-socials li {
   display: inline-block;
 }
 footer .rdwn-socials li a {
+  color: #707070;
   margin-right: 1em;
 }
 footer .copyright {
