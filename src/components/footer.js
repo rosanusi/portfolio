@@ -14,7 +14,7 @@ export default class footer extends Component {
             <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">Instagram</a></li>
           </ul>
 
-          <span className="copyright">Copyright, 2020</span>
+          {/* <span className="copyright">Copyright, 2020</span> */}
 
         </footer>
     )

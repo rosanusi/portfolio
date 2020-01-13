@@ -679,6 +679,11 @@ footer {
     line-height : 1.5;
     place-self: auto;
 
+    @media screen and (max-width: 600px) { 
+        padding-bottom: 1.25em;
+        font-size : 1em;
+    }
+
     .rdwn-socials {
 
         ul {
@@ -699,12 +704,13 @@ footer {
 
     .copyright {
         margin-left : auto;
+
+        @media screen and (max-width: 600px) { 
+            text-align: right;
+        }
     }
     
-    @media screen and (max-width: 600px) { 
-        padding-bottom: 1.25em;
-        font-size : 1em;
-    }
+
 }
 
 

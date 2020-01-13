@@ -590,6 +590,12 @@ footer {
   line-height: 1.5;
   place-self: auto;
 }
+@media screen and (max-width: 600px) {
+  footer {
+    padding-bottom: 1.25em;
+    font-size: 1em;
+  }
+}
 footer .rdwn-socials ul {
   display: inline-block;
 }
@@ -605,9 +611,8 @@ footer .copyright {
   margin-left: auto;
 }
 @media screen and (max-width: 600px) {
-  footer {
-    padding-bottom: 1.25em;
-    font-size: 1em;
+  footer .copyright {
+    text-align: right;
   }
 }
 
