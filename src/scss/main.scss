@@ -60,7 +60,7 @@
 
 // Color
 $display-color : #10101c;
-$body-color : #10101c;
+$body-color : #282828;
 $light-body-color: lighten( $body-color, 50% );
 $primary-color : #3c5ee4;
 
@@ -104,7 +104,7 @@ p {
 }
 
 .rdwn-wrap {
-    max-width: calc(90em + 5em);
+    max-width: calc(60em + 5em);
     width: 100%;
     padding-left: 2.5em;
     padding-right: 2.5em;
@@ -135,8 +135,8 @@ p {
     width: 100%;
     grid-template-rows: auto;
     grid-template-columns: .9fr .6fr;
-    padding-left: 2.5em;
-    padding-right: 2.5em;
+    // padding-left: 2.5em;
+    // padding-right: 2.5em;
     margin: auto auto;
 
     .rdwn-bio_copy__main, .rdwn-bio_copy__sub {
@@ -157,7 +157,6 @@ p {
 
 
     @media screen and (max-width: 600px) { 
-        padding: 0;
         grid-template-columns: 1fr;
         // margin-top: 5em;
         // margin-bottom: 5em;
@@ -209,7 +208,7 @@ p {
 
 .rdwn-header {
     display : flex;
-    font-size : 1.2em;
+    font-size : 1.25em;
     line-height : 1;
     padding-top : 2.5em;
 
@@ -225,12 +224,13 @@ p {
 
         text-decoration : none;
         color : $body-color;
+        line-height: 1.24;
 
         .title {
-            font-size: .8em;
+            // font-size: .8em;
             display: block;
             margin-top: 4px;
-            color : #a0a0a0;
+            // color : #a0a0a0;
             // color: #aaa;
         }
 
@@ -675,10 +675,12 @@ footer {
     flex-flow: row;
     // margin-top: auto;
     padding-bottom: 2.5em;
-    font-size : 1em;
-    line-height : 1.5;
+    font-size: 1.25em;
+    line-height: 1;
     place-self: auto;
-    color : #707070;
+    align-items: flex-end;
+    place-self: auto;
+    // color : #707070;
 
     @media screen and (max-width: 600px) { 
         padding-bottom: 1.25em;
@@ -696,9 +698,16 @@ footer {
             margin-left: 0;
             display: inline-block;
 
+            @media screen and (max-width: 600px) { 
+                display: block;
+                margin-top: 8px;
+            }
+
+
+
+
 
             a {
-                color : #707070;
                 margin-right: 1em;
             }
         }

@@ -9,13 +9,13 @@ const Header = ({ siteTitle }) => (
     <Link to="/" className="rdwn-name">
       {/* {siteTitle} */}
       <h1>Ridwan Sanusi</h1>
-      {/* <span class="title">↬ Product Designer</span> */}
+      <span class="title">Experience Designer</span>
     </Link>
 
-    <ul className="rdwn-links">
+    {/* <ul className="rdwn-links">
       <li><Link to="/profile">About</Link></li>
       <li><a href="https://www.linkedin.com/in/busolarsanusi/" rel="noopener noreferrer" target="_blank">Resume</a></li>
-    </ul>
+    </ul> */}
 
   </header>
 )
