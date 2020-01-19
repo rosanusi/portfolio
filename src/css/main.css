@@ -116,7 +116,7 @@ html, body {
 
 a:not(.rdwn-name) {
   color: #282828;
-  border-bottom: 1px solid #f4f4f4;
+  border-bottom: 1px solid #c1c1c1;
   text-decoration: none;
   cursor: pointer;
 }

@@ -43,7 +43,7 @@ const Profile = (props) => (
                     <p>Born and raised in Nigeria. In the past ten years, I have lived in Southeast Asia, Middle East and currently Europe. Travel and experiencing new cultures have always played a big role in shaping my personal beliefs.</p>
 
                     <small className="smalltitle">Other Activities</small>
-                    <p>When I'm not knee-deep in some design work, I try to spend some time improving my javascript through various side projects, penning down some notes on design &amp; whatnots or you can find me fiddling with my Maschine MK2 sampling old records to make beats.</p>
+                    <p>When I'm not knee-deep in some design work, I try to spend some time improving my javascript through various side projects, penning down <a href="https://ridsnote.blot.im/"  rel="noopener noreferrer" target="_blank">some notes on design</a> &amp; whatnots or you can find me fiddling with my Maschine MK2 sampling old records to make beats.</p>
 
                 </div>  
                 
