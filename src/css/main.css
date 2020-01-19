@@ -303,28 +303,37 @@ p {
 }
 .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
   font-family: "FK Grotesk Monospaced";
-  font-size: 0.9em;
+  font-size: 0.825em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
+  color: #707070;
 }
 @media screen and (max-width: 600px) {
   .rdwn-bio-subsection .rdwn-bio_copy__smalltitle {
     font-size: 0.7em;
-    margin-bottom: 0.5em;
   }
 }
-.rdwn-bio-subsection h4 {
-  font-family: "FK Grotesk Bold";
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
 .rdwn-bio-subsection .rdwn-project-titles {
-  font-size: 1.4em;
-  line-height: 1.8;
+  display: grid;
+  position: relative;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2em;
 }
 @media screen and (max-width: 600px) {
   .rdwn-bio-subsection .rdwn-project-titles {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+  }
+}
+.rdwn-bio-subsection .rdwn-project-titles li {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 600px) {
+  .rdwn-bio-subsection .rdwn-project-titles li {
     font-size: 1em;
   }
 }

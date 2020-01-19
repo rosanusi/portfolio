@@ -25,9 +25,17 @@ class hero extends Component {
 
                 <div className="rdwn-bio-subsection">
                     <h2 className="rdwn-bio_copy__smalltitle">Selected past projects</h2>
-                    <p className="rdwn-project-titles">
-                        <Link to="/preferred">Product Dashboard for Booking.com</Link>, <Link to="/icflix">icflix Smart TV</Link>, <Link to="/swiffix">Swiffix Mobile App</Link>
-                    </p>
+                    <ul className="rdwn-project-titles">
+                        <li>
+                            <Link to="/preferred">Program dashboard for Booking's exclusive partner program</Link>    
+                        </li>
+                        <li>
+                            <Link to="/swiffix">An on-demand home service platform for Swiffix</Link>
+                        </li>
+                        <li>
+                            <Link to="/icflix">Redesigning a movie streaming smart tv app</Link>
+                        </li> 
+                    </ul>
                 </div>
             </div>  
 

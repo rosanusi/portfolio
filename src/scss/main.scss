@@ -311,30 +311,42 @@ p {
 
     .rdwn-bio_copy__smalltitle {
         font-family: "FK Grotesk Monospaced";
-        font-size : .9em;
+        font-size : .825em;
         text-transform: uppercase;
         letter-spacing: 1px;
-        margin-bottom : 1em;
+        margin-bottom : 1.5em;
+        color : #707070;
 
         @media screen and (max-width: 600px) { 
             font-size: .7em;
-            margin-bottom: .5em;
+            // margin-bottom: .5em;
         }
 
     }
 
-    h4 {
-        font-family : "FK Grotesk Bold";
-        font-size : 1.5rem;
-        margin-bottom : 1rem;
-    }
-
     .rdwn-project-titles {
-        font-size : 1.4em;
-        line-height: 1.8;
+        display: grid;
+        position : relative;
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap : 2em;
 
         @media screen and (max-width: 600px) { 
-            font-size: 1em;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-gap : 1em;
+        }
+
+
+
+        li {
+            font-size : 1.25em;
+            line-height: 1.5;
+
+            @media screen and (max-width: 600px) { 
+                font-size: 1em;
+            }
+    
         }
     }
 
