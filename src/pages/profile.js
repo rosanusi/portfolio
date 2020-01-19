@@ -1,9 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 // import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+// import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import Books from '../components/books'
+import myVideo from '../video/meee.mp4'
 
 
 const Profile = (props) => (
@@ -32,10 +33,14 @@ const Profile = (props) => (
 
                 </div>    
 
-                <div className="workImage">
+                {/* <div className="workImage">
                     <div className="img-container">
                         <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
                     </div>
+                </div> */}
+
+                <div className="rdwn-video-container">
+                    <video src={myVideo} type="video/mp4s" autoPlay loop controls/>
                 </div>
 
                 <div className="rdwn-profile-copy">
@@ -65,7 +70,7 @@ const Profile = (props) => (
 
                 <small className="smalltitle">Current Side Projects</small>
 
-                <p><a href="https://github.com/rosanusi/project_journal">Project Journal</a>, <a href="https://quran-curious-mind.netlify.com/">Quran for the curious minds</a>, <a href="https://github.com/rosanusi/notes">Notes App</a>, <a href="https://github.com/rosanusi/watchbox">Watchbox</a></p>
+                <p><a href="https://ridsnote.blot.im/"  rel="noopener noreferrer" target="_blank">Design Sidenotes</a>, <a href="https://github.com/rosanusi/project_journal">Project Journal</a>, <a href="https://quran-curious-mind.netlify.com/">Quran for the curious minds</a>, <a href="https://github.com/rosanusi/notes">Notes App</a>, <a href="https://github.com/rosanusi/watchbox">Watchbox</a></p>
 
 
 
