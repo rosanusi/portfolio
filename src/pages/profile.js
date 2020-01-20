@@ -48,7 +48,7 @@ const Profile = (props) => (
                     <p>Born and raised in Nigeria. In the past ten years, I have lived in Southeast Asia, Middle East and currently Europe. Travel and experiencing new cultures have always played a big role in shaping my personal beliefs.</p>
 
                     <small className="smalltitle">Other Activities</small>
-                    <p>When I'm not knee-deep in some design work, I try to spend some time improving my javascript through various side projects, penning down <a href="https://ridsnote.blot.im/"  rel="noopener noreferrer" target="_blank">some notes on design</a> &amp; whatnots or you can find me fiddling with my Maschine MK2 sampling old records to make beats.</p>
+                    <p>When I'm not knee-deep in some design work, I try to spend some time improving my javascript through various side projects, penning down <a href="https://sidenote.ridwansanusi.com/"  rel="noopener noreferrer" target="_blank">some notes on design</a> &amp; whatnots or you can find me fiddling with my Maschine MK2 sampling old records to make beats.</p>
 
                 </div>  
                 
@@ -70,7 +70,7 @@ const Profile = (props) => (
 
                 <small className="smalltitle">Current Side Projects</small>
 
-                <p><a href="https://ridsnote.blot.im/"  rel="noopener noreferrer" target="_blank">Design Sidenotes</a>, <a href="https://github.com/rosanusi/project_journal">Project Journal</a>, <a href="https://quran-curious-mind.netlify.com/">Quran for the curious minds</a>, <a href="https://github.com/rosanusi/notes">Notes App</a>, <a href="https://github.com/rosanusi/watchbox">Watchbox</a></p>
+                <p><a href="https://sidenote.ridwansanusi.com/"  rel="noopener noreferrer" target="_blank">Design Sidenotes</a>, <a href="https://github.com/rosanusi/project_journal">Project Journal</a>, <a href="https://quran-curious-mind.netlify.com/">Quran for the curious minds</a>, <a href="https://github.com/rosanusi/notes">Notes App</a>, <a href="https://github.com/rosanusi/watchbox">Watchbox</a></p>
 
 
 
