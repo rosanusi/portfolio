@@ -12,7 +12,7 @@ class hero extends Component {
 
                 {/* <h1 className="rdwn-bio_copy__name">Hey. I'm Ridwan.</h1> */}
 
-                <p className="rdwn-bio_copy__main">Delivering delightful digital experiences by using user-centered processes to solve meaningful challenges.</p>
+                <p className="rdwn-bio_copy__main">Delivering delightful experiences by using user-centered processes to solve meaningful challenges.</p>
 
                 <p className="rdwn-bio_copy__sub">
                     

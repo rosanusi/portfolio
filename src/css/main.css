@@ -592,7 +592,7 @@ footer {
   display: flex;
   flex-flow: row;
   padding-bottom: 2.5em;
-  font-size: 1.25em;
+  font-size: 1em;
   line-height: 1;
   place-self: auto;
   align-items: flex-end;
