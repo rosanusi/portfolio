@@ -119,10 +119,10 @@ const Swiffix = (props) => (
 
 
         <div className="rdwn-work-copy">
-            <h6 className="title">Iterating based on validation</h6>
+            <h6 className="title">Functional and delightful</h6>
 
             <div className="details">
-                <p>IAt the beginning, there were explorations around adding delight to the experience with introduction of colors and copy that's perceived as fun. As we move along during the validation phase, we did realized that a different approach where we bring the functionality of the product to the front works better. </p>
+                <p>At the beginning, there were explorations around adding delight to the experience with introduction of colors and copy that's perceived as fun. As we move along during the validation phase, we did realized that bringing the functionality of the product to the front works very well with this element of delight. </p>
                 <p>As we enter development phase of the iOS project, we started thinking about creating a web version of the product. Created the customer journey mirroring the experience present on the mobile version with the affordances that desktop allows.</p>
             </div>
         </div> 
