@@ -7,7 +7,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import mainVideo from '../video/icflixsmart.mp4'
 import videoProto1 from '../video/icflix-horizontal.mp4'
-import Anime, {anime} from 'react-anime';
+// import Anime, {anime} from 'react-anime';
 
 
 const Icflix = (props) => (
@@ -23,27 +23,27 @@ const Icflix = (props) => (
 
             <div className="rdwn-work-head">
                 <p className="rdwn-bio_copy__main">
-                    <Anime  
+                    {/* <Anime  
                         opacity={[0, 1]}
                         easing="easeInOutQuad"
                         delay={700}
-                    >
+                    > */}
                         Redesigning icflix smart tv app
-                    </Anime>
+                    {/* </Anime> */}
                 </p>
             </div>
 
 
             <div className="rdwn-work-copy">
                 <div className="details">
-                    <Anime  
+                    {/* <Anime  
                         opacity={[0, 1]}
                         easing="easeInOutQuad"
                         delay={500}
-                    >
+                    > */}
                         <small className="smalltitle">Strategy, Research, UX, UI, Prototype</small>
                         <p className="sub">Just like the website and iOS app, the intial icflix smart tv app in the market wasn't offering anything besides playing content. As our mobile apps and website got redesigned with new features added, it became important that we visited and revamped the smart TV app.</p>
-                    </Anime>
+                    {/* </Anime> */}
                 </div>
             </div>
 

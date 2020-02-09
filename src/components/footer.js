@@ -1,20 +1,20 @@
 import React, { Component } from 'react'
-import Anime, {anime} from 'react-anime';
+// import Anime, {anime} from 'react-anime';
 
 
-let footerProps = {
-  translateY : [4, 0],
-  opacity : [0, 1],
-  easing: 'easeInOutQuad',
-  // loop: true,
-  duration: 600,
-}
+// let footerProps = {
+//   translateY : [4, 0],
+//   opacity : [0, 1],
+//   easing: 'easeInOutQuad',
+//   // loop: true,
+//   duration: 600,
+// }
 
 export default class footer extends Component {
   render() {
     return (
         <footer className="mainFooter">
-          <Anime {...footerProps}>
+          {/* <Anime {...footerProps}> */}
             <ul className="rdwn-socials">
               <li><a href="https://sidenote.ridwansanusi.com/"  rel="noopener noreferrer" target="_blank">Sidenote</a></li>
               <li><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
@@ -24,13 +24,13 @@ export default class footer extends Component {
               {/* <li><a href="https://open.spotify.com/user/rosanusi?si=Yzurq8VvQlq_mPCxwT83Sw" rel="noopener noreferrer" target="_blank">Spotify</a></li> */}
               {/* <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">Instagram</a></li> */}
             </ul>          
-          </Anime>
+          {/* </Anime> */}
 
 
           <span className="copyright">
-            <Anime {...footerProps}>
+            {/* <Anime {...footerProps}> */}
               Copyright, 2020           
-            </Anime>            
+            {/* </Anime>             */}
           </span>
 
         </footer>

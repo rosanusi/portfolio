@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
-import Anime, {anime} from 'react-anime';
+// import Anime, {anime} from 'react-anime';
   
 
 
 // Animation 
 
-let heroCopyProps = {
-    translateY : [4, 0],
-    opacity : [0, 1],
-    easing: 'easeInOutQuad',
-    delay: 500
-}
+// let heroCopyProps = {
+//     translateY : [4, 0],
+//     opacity : [0, 1],
+//     easing: 'easeInOutQuad',
+//     delay: 500
+// }
 
-let linkProps = {
-    opacity : [0, 1],
-    easing: 'easeInOutQuad',
-    // loop: true,
-    delay: 700,
-}
+// let linkProps = {
+//     opacity : [0, 1],
+//     easing: 'easeInOutQuad',
+//     // loop: true,
+//     delay: 700,
+// }
 
-let worksProps = {
-    opacity : [0, 1],
-    easing: 'easeInOutQuad',
-    // loop: true,
-    delay: 1200,
-}
+// let worksProps = {
+//     opacity : [0, 1],
+//     easing: 'easeInOutQuad',
+//     // loop: true,
+//     delay: 1200,
+// }
 
 class hero extends Component {
 
@@ -40,23 +40,23 @@ class hero extends Component {
 
 
                 <p className="rdwn-bio_copy__main">
-                    <Anime {...heroCopyProps}>
+                    {/* <Anime {...heroCopyProps}> */}
                         Delivering delightful experiences by using user-centered processes to solve meaningful challenges.
-                    </Anime>
+                    {/* </Anime> */}
                 </p>
 
                 <p className="rdwn-bio_copy__sub">
-                <Anime {...linkProps}>
+                {/* <Anime {...linkProps}> */}
                     <a href="/profile" className="rdwn-bio-link">
                         More about me
                     </a>
-                    </Anime>
+                    {/* </Anime> */}
 
                 </p>
 
 
                 <div className="rdwn-bio-subsection">
-                    <Anime {...worksProps}>
+                    {/* <Anime {...worksProps}> */}
                     <h2 className="rdwn-bio_copy__smalltitle">Selected past projects</h2>
                     <ul className="rdwn-project-titles">
                         <li>
@@ -69,7 +69,7 @@ class hero extends Component {
                             <Link to="/icflix">Redesigning a movie streaming smart tv app</Link>
                         </li> 
                     </ul>
-                    </Anime>
+                    {/* </Anime> */}
                 </div>
 
             </div>  

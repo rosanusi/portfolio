@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import mainVideo from '../video/pref.mp4'
-import Anime, {anime} from 'react-anime';
+// import Anime, {anime} from 'react-anime';
 
 
 
@@ -24,26 +24,26 @@ const Preferred = (props) => (
             <div className="rdwn-work-head">
                 {/* <h1 className="rdwn-bio_copy__name">back to home</h1> */}
                 <p className="rdwn-bio_copy__main">
-                    <Anime  
+                    {/* <Anime  
                         opacity={[0, 1]}
                         easing="easeInOutQuad"
                         delay={700}
-                    >
+                    > */}
                         Program dashboard for Booking.com's exclusive partner program
-                    </Anime>
+                    {/* </Anime> */}
                 </p>
             </div>
 
             <div className="rdwn-work-copy">
                 <div className="details">
-                    <Anime  
+                    {/* <Anime  
                         opacity={[0, 1]}
                         easing="easeInOutQuad"
                         delay={500}
-                    >
+                    > */}
                     <small className="smalltitle">Strategy, Research, UX, UI, Prototype</small>
                     <p>Preferred Partner Program is an exclusive status offered to high-performing properties. Preferred properties get extra visibility in the search results and an exclusive badge. Because this was a partner-facing project, I have blurred the header to hide sensitive information, used mock data and only talk about the external parts of the project.</p>
-                    </Anime>
+                    {/* </Anime> */}
                 </div>
 
             </div>

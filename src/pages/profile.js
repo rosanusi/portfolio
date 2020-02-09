@@ -4,17 +4,17 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import Books from '../components/books'
-import Anime, {anime} from 'react-anime';
+// import Anime, {anime} from 'react-anime';
 // import myVideo from '../video/meee.mp4'
 
 
 
-let generalAnimProps = {
-    opacity : [0, 1],
-    easing: 'easeInOutQuad',
-    // loop: true,
-    delay: 700,
-}
+// let generalAnimProps = {
+//     opacity : [0, 1],
+//     easing: 'easeInOutQuad',
+//     // loop: true,
+//     delay: 700,
+// }
 
 const Profile = (props) => (
     <Layout>
@@ -25,9 +25,9 @@ const Profile = (props) => (
             {/* <h1 className="rdwn-bio_copy__name">My Profile</h1> */}
 
             <p className="rdwn-bio_copy__main">
-                <Anime {...generalAnimProps}>
+                {/* <Anime {...generalAnimProps}> */}
                 Embracing challenges. Designing the right thing. Designing it the right way. Enjoying the process.
-                </Anime>
+                {/* </Anime> */}
             </p>
         </div>  
 
@@ -36,11 +36,11 @@ const Profile = (props) => (
 
             <div className="rdwn-main-section">
 
-                <Anime  
+                {/* <Anime  
                     opacity={[0, 1]}
                     easing="easeInOutQuad"
                     delay={600}
-                >
+                > */}
                     <div className="rdwn-profile-copy">
                         <small className="smalltitle">What I do</small>
                         <p>As an experience designer, the core of my work involves helping my team understand complex challenges through research, explore ideas based on actionable insights and craft data-informed designs that solve customer problems while adding value to business.</p>
@@ -68,7 +68,7 @@ const Profile = (props) => (
                         <p>When I'm not knee-deep in some design work, I try to spend some time improving my javascript through various side projects, penning down <a href="https://sidenote.ridwansanusi.com/"  rel="noopener noreferrer" target="_blank">some notes on design</a> &amp; whatnots or you can find me fiddling with my Maschine MK2 sampling old records to make beats.</p>
                     </div> 
 
-                </Anime> 
+                {/* </Anime>  */}
                 
 
                 
@@ -77,11 +77,11 @@ const Profile = (props) => (
 
             <div className="rdwn-profile-sidebar">
 
-                <Anime  
+                {/* <Anime  
                     opacity={[0, 1]}
                     easing="easeInOutQuad"
                     delay={1200}
-                >
+                > */}
 
                 <small className="smalltitle">Currently (2016 - Now)</small>
                 <h4 className="xp-title">UX Designer at booking.com, Amsterdam</h4>
@@ -107,7 +107,7 @@ const Profile = (props) => (
 
                 <Books />
 
-                </Anime>
+                {/* </Anime> */}
                 
 
             </div>
