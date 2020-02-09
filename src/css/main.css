@@ -264,7 +264,6 @@ p {
 }
 
 .rdwn-main-section .workImage {
-  max-width: 20em;
   margin: 4em auto;
 }
 @media screen and (max-width: 600px) {

@@ -4,10 +4,11 @@ import Layout from '../components/layout'
 import Hero from '../components/hero'
 import SEO from '../components/seo'
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Ridwan Sanusi | Portfolio" keywords={[`gatsby`, `application`, `react`]} />
-        <Hero />
+      <Hero />
   </Layout>
 )
 

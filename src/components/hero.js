@@ -6,9 +6,11 @@ class hero extends Component {
 
     render() {
         return (
+
+
+
             
             <div className="rdwn-grid-container">
-
 
                 {/* <h1 className="rdwn-bio_copy__name">Hey. I'm Ridwan.</h1> */}
 
@@ -37,7 +39,10 @@ class hero extends Component {
                         </li> 
                     </ul>
                 </div>
+
             </div>  
+        
+        
 
 
         );

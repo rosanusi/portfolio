@@ -1,10 +1,10 @@
 import React from 'react'
 import Layout from '../components/layout'
 // import { Link } from 'gatsby'
-// import Img from 'gatsby-image'
+import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import Books from '../components/books'
-import myVideo from '../video/meee.mp4'
+// import myVideo from '../video/meee.mp4'
 
 
 const Profile = (props) => (
@@ -33,15 +33,15 @@ const Profile = (props) => (
 
                 </div>    
 
-                {/* <div className="workImage">
+                <div className="workImage">
                     <div className="img-container">
                         <Img fluid={props.data.imageTwo.childImageSharp.fluid} />
                     </div>
-                </div> */}
-
-                <div className="rdwn-video-container">
-                    <video src={myVideo} type="video/mp4s" autoPlay loop controls/>
                 </div>
+
+                {/* <div className="rdwn-video-container">
+                    <video src={myVideo} type="video/mp4s" autoPlay loop controls/>
+                </div> */}
 
                 <div className="rdwn-profile-copy">
                 <small className="smalltitle">Brief Bio</small>
