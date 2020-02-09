@@ -5,6 +5,9 @@ import SEO from '../components/seo'
 // import Nav from '../components/nav'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import Anime, {anime} from 'react-anime';
+
+
 
 const Swiffix = (props) => (
   <Layout>
@@ -18,13 +21,27 @@ const Swiffix = (props) => (
 
 
         <div className="rdwn-work-head">
-            <p className="rdwn-bio_copy__main">Designing an on-demand home service platform for Swiffix</p>
+            <p className="rdwn-bio_copy__main">
+                <Anime  
+                    opacity={[0, 1]}
+                    easing="easeInOutQuad"
+                    delay={700}
+                >
+                Designing an on-demand home service platform for Swiffix
+                </Anime>
+            </p>
         </div>
 
         <div className="rdwn-work-copy">
             <div className="details">
+                <Anime  
+                    opacity={[0, 1]}
+                    easing="easeInOutQuad"
+                    delay={500}
+                >
                 <small className="smalltitle">Strategy, Research, UX, UI, Prototype</small>
                 <p className="sub">Swiffix wants to simplify people’s lives by connecting them with verified on-demand professionals to help with taks around their home.</p>
+                </Anime>
             </div>
         </div>
 

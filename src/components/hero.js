@@ -1,8 +1,34 @@
 import React, { Component } from 'react';
 import { Link } from 'gatsby';
+import Anime, {anime} from 'react-anime';
+  
 
+
+// Animation 
+
+let heroCopyProps = {
+    translateY : [4, 0],
+    opacity : [0, 1],
+    easing: 'easeInOutQuad',
+    delay: 500
+}
+
+let linkProps = {
+    opacity : [0, 1],
+    easing: 'easeInOutQuad',
+    // loop: true,
+    delay: 700,
+}
+
+let worksProps = {
+    opacity : [0, 1],
+    easing: 'easeInOutQuad',
+    // loop: true,
+    delay: 1200,
+}
 
 class hero extends Component {
+
 
     render() {
         return (
@@ -12,20 +38,25 @@ class hero extends Component {
             
             <div className="rdwn-grid-container">
 
-                {/* <h1 className="rdwn-bio_copy__name">Hey. I'm Ridwan.</h1> */}
 
-                <p className="rdwn-bio_copy__main">Delivering delightful experiences by using user-centered processes to solve meaningful challenges.</p>
+                <p className="rdwn-bio_copy__main">
+                    <Anime {...heroCopyProps}>
+                        Delivering delightful experiences by using user-centered processes to solve meaningful challenges.
+                    </Anime>
+                </p>
 
                 <p className="rdwn-bio_copy__sub">
-                    
-                    {/* Currently helping to improve how people experience the world at <a href="http://www.booking.com"  rel="noopener noreferrer" target="_blank">booking.com</a> in Amsterdam. In my spare time, I collect <a href="https://ridsnote.blot.im/"  rel="noopener noreferrer" target="_blank">notes on design</a>, play with javascript through <a href="https://github.com/rosanusi?tab=repositories" rel="noopener noreferrer" target="_blank">side projects</a> and make beats on my Maschine MKII.  */}
-                    
-                    <a href="/profile" className="rdwn-bio-link">More about me</a>
-                    
-                    </p>
+                <Anime {...linkProps}>
+                    <a href="/profile" className="rdwn-bio-link">
+                        More about me
+                    </a>
+                    </Anime>
+
+                </p>
 
 
                 <div className="rdwn-bio-subsection">
+                    <Anime {...worksProps}>
                     <h2 className="rdwn-bio_copy__smalltitle">Selected past projects</h2>
                     <ul className="rdwn-project-titles">
                         <li>
@@ -38,6 +69,7 @@ class hero extends Component {
                             <Link to="/icflix">Redesigning a movie streaming smart tv app</Link>
                         </li> 
                     </ul>
+                    </Anime>
                 </div>
 
             </div>  
