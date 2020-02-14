@@ -40,7 +40,7 @@ const Swiffix = (props) => (
                     delay={500}
                 > */}
                 <small className="smalltitle">Strategy, Research, UX, UI, Prototype</small>
-                <p className="sub">Swiffix wants to simplify people’s lives by connecting them with verified on-demand professionals to help with taks around their home.</p>
+                <p className="sub">Swiffix wants to simplify people’s lives by connecting them with verified on-demand professionals to help with tasks around their home.</p>
                 {/* </Anime> */}
             </div>
         </div>
