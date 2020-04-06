@@ -3,7 +3,7 @@
 
 /**
  * @license
- * MyFonts Webfont Build ID 3766078, 2019-05-25T02:18:23-0400
+ * MyFonts Webfont Build ID 3873002, 2020-02-27T19:18:38-0500
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -11,51 +11,58 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: Formular by Brownfox
- * URL: https://www.myfonts.com/fonts/brownfox/formular/regular/
+ * Webfont: TTNormsPro-Regular by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-norms/regular/
  * 
- * Webfont: FormularMono by Brownfox
- * URL: https://www.myfonts.com/fonts/brownfox/formular/mono/
+ * Webfont: TTNormsPro-Bold by TypeType
+ * URL: https://www.myfonts.com/fonts/type-type/tt-norms/bold/
  * 
  * 
- * License: https://www.myfonts.com/viewlicense?type=web&buildid=3766078
  * Licensed pageviews: 20,000
- * Webfonts copyright: Copyright (c) 2014 by Vyacheslav Kirilenko, Gayane Bagdasaryan. All rights reserved.
+ * Webfonts copyright: Copyright (c) 2016-2019 by TypeType. Designers Ivan Gladkikh, Pavel Emelyanov. Technical designers Vika Usmanova, Olexa Volochay, Nadyr Rakhimov, Yuri Nakonechny. All rights reserved.
  * 
- * © 2019 MyFonts Inc
+ * © 2020 MyFonts Inc
 */
 
 
 /* @import must be at top of file, otherwise CSS will not work */
-
-@import url("//hello.myfonts.net/count/39773e");
-@import url("//hello.myfonts.net/count/39778f");
+@import url("//hello.myfonts.net/count/3b18ea");
+@import url("//hello.myfonts.net/count/3b18ea");
 
  
-// @font-face {font-family: 'Formular';src: url('../webfonts/39773E_0_0.eot');src: url('../webfonts/39773E_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_0_0.woff2') format('woff2'),url('../webfonts/39773E_0_0.woff') format('woff'),url('../webfonts/39773E_0_0.ttf') format('truetype'),url('../webfonts/39773E_0_0.svg#wf') format('svg');}
-// @font-face {font-family: '"FK Grotesk Bold"';src: url('../webfonts/39778F_0_0.eot');src: url('../webfonts/39778F_0_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39778F_0_0.woff2') format('woff2'),url('../webfonts/39778F_0_0.woff') format('woff'),url('../webfonts/39778F_0_0.ttf') format('truetype');}
-// @font-face {font-family: 'FormularMono';src: url('../webfonts/39773E_1_0.eot');src: url('../webfonts/39773E_1_0.eot?#iefix') format('embedded-opentype'),url('../webfonts/39773E_1_0.woff2') format('woff2'),url('../webfonts/39773E_1_0.woff') format('woff'),url('../webfonts/39773E_1_0.ttf') format('truetype'),url('../webfonts/39773E_1_0.svg#wf') format('svg');}
-
-
 
 @font-face {
-    font-family:"FK Grotesk Regular";
-    src:url("../webfonts/FKGrotesk-Regular.woff2") format("woff2"),url("../webfonts/FKGrotesk-Regular.woff") format("woff");
-    font-style:normal;font-weight:400;
+    font-family: 'TTNormsPro-Regular';
+    src: url('../webfonts/3B18EA_0_0.eot');
+    src: url('../webfonts/3B18EA_0_0.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/3B18EA_0_0.woff2') format('woff2'),
+        url('../webfonts/3B18EA_0_0.woff') format('woff'),
+        url('../webfonts/3B18EA_0_0.ttf') format('truetype');
 }
 
 @font-face {
-    font-family:"FK Grotesk Monospaced";
-    src:url("../webfonts/FKGrotesk-Monospaced.woff2") format("woff2"),url("../webfonts/FKGrotesk-Monospaced.woff") format("woff");
-    font-style:normal;font-weight:400;
+    font-family: 'TTNormsPro-Bold';
+    src: url('../webfonts/3B18EA_1_0.eot');
+    src: url('../webfonts/3B18EA_1_0.eot?#iefix') format('embedded-opentype'),
+        url('../webfonts/3B18EA_1_0.woff2') format('woff2'),
+        url('../webfonts/3B18EA_1_0.woff') format('woff'),
+        url('../webfonts/3B18EA_1_0.ttf') format('truetype');
 }
 
 @font-face {
-    font-family:"FK Grotesk Bold";
-    src:url("../webfonts/FKGrotesk-Bold.woff2") format("woff2"),url("../webfonts/FKGrotesk-Bold.woff") format("woff");
-    font-style:normal;font-weight:400;
+    font-family: 'TTNormsPro-Regular';
+    src:url('../webfonts/3B18EA_0_unhinted_0.woff2') format('woff2'),
+        url('../webfonts/3B18EA_0_unhinted_0.woff') format('woff'),
+        url('../webfonts/3B18EA_0_unhinted_0.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'TTNormsPro-Bold';
+    src:url('../webfonts/3B18EA_1_unhinted_0.woff2') format('woff2'),
+        url('../webfonts/3B18EA_1_unhinted_0.woff') format('woff'),
+        url('../webfonts/3B18EA_1_unhinted_0.ttf') format('truetype');
+}
+ 
 
 
 // Color
@@ -73,7 +80,7 @@ html, body {
     height: 100%;
     color :$body-color;
     background-color: #fff; 
-	font-family:"FK Grotesk Regular";
+	font-family: 'TTNormsPro-Regular';
     -webkit-font-smoothing : antialiased;
 }
 
@@ -173,7 +180,6 @@ p {
 
 
 .smalltitle {
-    font-family: "FK Grotesk Monospaced";
     font-size : .8em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -310,7 +316,6 @@ p {
     }
 
     .rdwn-bio_copy__smalltitle {
-        font-family: "FK Grotesk Monospaced";
         font-size : .825em;
         text-transform: uppercase;
         letter-spacing: 1px;
@@ -403,7 +408,6 @@ p {
 .rdwn-pagetitle {
     margin-bottom : 4rem;
     text-align: center;
-    font-family: "FK Grotesk Monospaced";
     text-transform: uppercase;
     letter-spacing: 1px;
     color : $light-body-color;
@@ -437,7 +441,6 @@ p {
     // }
 
     .meta {
-        font-family: "FK Grotesk Monospaced";
         display: block;
         margin-bottom : 2em;
         color : #808080;
@@ -464,7 +467,6 @@ p {
             color: $light-body-color;
             display: block;
             text-align: center;
-            font-family: "FK Grotesk Monospaced";
             margin-bottom : 1.5rem;
         }
 
@@ -527,7 +529,6 @@ p {
                 p {
                     margin-bottom : 0;
                     font-size: 1rem;
-                    font-family: "FK Grotesk Monospaced";
                     letter-spacing: -.75px;
                 }
 
@@ -538,7 +539,6 @@ p {
         }
 
         blockquote {
-            font-family: "FK Grotesk Monospaced";
             margin : 4rem 0;
             font-size : .8rem;
             line-height: 1.5;
@@ -563,7 +563,6 @@ p {
     .rdwn-read-title {
         margin-bottom : 4rem;
         text-align: center;
-        font-family: "FK Grotesk Monospaced";
         text-transform: uppercase;
         letter-spacing: 1px;
         color : $light-body-color;
@@ -610,7 +609,6 @@ p {
                 font-size: .8rem;
                 color : $light-body-color;
                 display: block;
-                font-family: "FK Grotesk Monospaced";
             }
         }
     }
@@ -660,7 +658,7 @@ p {
 
 
 .rdwn-playground {
-    margin-top: 8em;
+    margin-top: 4em8em;
 
     @media (max-width: 600px) { 
         margin-top : 4em;
