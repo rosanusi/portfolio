@@ -8,6 +8,13 @@ module.exports = {
     
     `gatsby-plugin-react-helmet`,
     {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require("tailwindcss")],
+      },
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
@@ -59,6 +66,14 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-136403700-1",
+      },
+    },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

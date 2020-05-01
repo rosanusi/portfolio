@@ -1,44 +1,32 @@
-
 import PropTypes from 'prop-types'
 import React from 'react'
 import { Link } from 'gatsby'
-// import Anime, {anime} from 'react-anime';
+import {useSpring, animated} from 'react-spring'
 
+const Header = ({ siteTitle }) => {
 
-// let headerProps = {
-//   opacity : [0, 1],
-//   translateY : [-4, 0],
-//   easing: 'easeInOutQuad',
-//   // loop: true,
-//   duration: 600,
-// }
+  const fadeHeader = useSpring({ 
+    from: { opacity: 0},
+    delay: 200,
+    opacity: 1,
+    config: {duration : 500} 
+  })
 
+  return(
+    <animated.header className="mt-10 md:mt-20" style={fadeHeader}>
+      <div className="flex container mx-auto px-8">
+        {/* <Anime {...headerProps}> */}
 
-const Header = ({ siteTitle }) => (
+        <Link to="/" className="rdwn-name text-gray-900">
+          <h1 className="text-base md:text-2xl">Ridwan Sanusi</h1>
+          <small className="text-base md:text-2xl text-gray-600">Product &amp; Experience Designer</small>
+        </Link>
 
+      </div>
+    </animated.header>
+  )
 
-
-  
-  <header className="rdwn-header">
-    
-    {/* <Anime {...headerProps}> */}
-
-    <Link to="/" className="rdwn-name">
-      {/* {siteTitle} */}
-      <h1>Ridwan Sanusi</h1>
-      <span className="title">Experience Designer</span>
-    </Link>
-
-    {/* <ul className="rdwn-links">
-      <li><Link to="/profile">About</Link></li>
-      <li><a href="https://www.linkedin.com/in/busolarsanusi/" rel="noopener noreferrer" target="_blank">Resume</a></li>
-    </ul> */}
-
-
-    {/* </Anime> */}
-
-  </header>
-)
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
