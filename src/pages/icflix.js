@@ -246,8 +246,23 @@ const Icflix = (props) => {
 
             <div className="md:my-48 my-24">
                 <div className="mx-auto grid grid-cols-12 gap-4">
-                    <div className="col-span-12">
+                    <div className="col-span-6 md:col-span-4">
                     <Img fluid={props.data.imageTwelve.childImageSharp.fluid} />
+                    </div>
+                    <div className="col-span-6 md:col-span-4">
+                    <Img fluid={props.data.imageThirteen.childImageSharp.fluid} />
+                    </div>
+                    <div className="col-span-6 md:col-span-4">
+                    <Img fluid={props.data.imageFourteen.childImageSharp.fluid} />
+                    </div>
+                    <div className="col-span-6 md:col-span-4">
+                    <Img fluid={props.data.imageFifteen.childImageSharp.fluid} />
+                    </div>
+                    <div className="col-span-6 md:col-span-4">
+                    <Img fluid={props.data.imageSixteen.childImageSharp.fluid} />
+                    </div>
+                    <div className="col-span-6 md:col-span-4">
+                    <Img fluid={props.data.imageSeventeen.childImageSharp.fluid} />
                     </div>
                 </div>
             </div>
@@ -350,7 +365,42 @@ export const pageQuery = graphql`
                 }
             }
         },
-        imageTwelve: file(relativePath: { eq: "works/icflix/new-icflix-12.png" }) {
+        imageTwelve: file(relativePath: { eq: "works/icflix/new-icflix-12.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageThirteen: file(relativePath: { eq: "works/icflix/new-icflix-13.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageFourteen: file(relativePath: { eq: "works/icflix/new-icflix-14.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageFifteen: file(relativePath: { eq: "works/icflix/new-icflix-15.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageSixteen: file(relativePath: { eq: "works/icflix/new-icflix-16.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageSeventeen: file(relativePath: { eq: "works/icflix/new-icflix-17.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 2000){
                 ...GatsbyImageSharpFluid
