@@ -21,6 +21,7 @@ const Footer = () => {
             </div>
             <div  className="grid grid-cols-12 gap-4 md:mb-20">
                 <ul className="flex rdwn-socials md:col-span-8 col-span-12 md:text-xl text-base flex-wrap">
+                  <li className="md:mr-8 mr-4"><a href="mailto:rosanusi@gmail.com"  rel="noopener noreferrer" target="_blank">Email</a></li>
                   <li className="md:mr-8 mr-4"><a href="https://sidenote.ridwansanusi.com/"  rel="noopener noreferrer" target="_blank">Sidenote</a></li>
                   <li className="md:mr-8 mr-4"><a href="https://twitter.com/busolasanusi" rel="noopener noreferrer" target="_blank">Twitter</a></li>
                   <li className="md:mr-8 mr-4"><a href="https://www.linkedin.com/in/busolarsanusi/" rel="noopener noreferrer" target="_blank">Linkedin</a></li>

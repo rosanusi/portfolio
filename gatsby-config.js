@@ -68,14 +68,6 @@ module.exports = {
         trackingId: "UA-136403700-1",
       },
     },
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: false,
-        develop: false,
-        tailwind: true
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
