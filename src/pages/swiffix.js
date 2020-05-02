@@ -178,16 +178,6 @@ const Swiffix = (props) => {
                 </div>
             </div>
 
-
-            <div className="md:my-48 my-24">
-                <div className="container mx-auto grid grid-cols-12 gap-4 px-8">
-                    <h6 className="md:col-start-2 md:col-span-3 col-span-12 tracking-tight md:text-4xl text-2xl text-gray-900">Conclusion</h6>
-                    <div className="md:col-start-6 md:col-span-6 col-span-12 md:text-2xl text-base text-gray-900">
-                        <p>At the beginning, there were explorations around adding delight to the experience with introduction of colors and copy that's perceived as fun. As we move along during the validation phase, we realized that a different approach where we bring the functionality of the product to the fore-front works better. </p>
-                    </div>
-                </div>
-            </div>
-
         </animated.div>
 
         <Footer />
