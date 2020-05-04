@@ -21,7 +21,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Ridwan Sanusi | Portfolio" keywords={[`gatsby`, `application`, `react`]} />
-        <Header />
+        {/* <Header /> */}
         <Hero />
         <animated.div style={fadeThird}>
           <Works />

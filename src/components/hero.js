@@ -16,8 +16,8 @@ const Hero = () => {
 
         <animated.div  className="my-24 md:my-48" style={fadeHero} >
             <div className="container grid grid-cols-12 gap-4 mx-auto px-8">
-                <h2 className="col-start-1 col-span-12 md:col-start-4 md:col-span-8 tracking-tight text-2xl md:text-4xl">
-                I'm a product designer with keen interest in giving form to complex ideas. Currently at booking.com, designing delightful experiences using human-centered process to solve meaningful challenges. <a href="/profile" className="">Get to know me</a>
+                <h2 className="col-start-1 col-span-12 md:col-start-3 md:col-span-9 tracking-tight text-2xl md:text-3xl">
+                Ridwan is a product &amp; experience designer with keen interest in giving delightful forms to complex ideas. Currently living in Amsterdam solving meaningful travel challenges at booking.com. <a href="/profile" className="">Get to know me</a>
                 </h2>
             </div>
         </animated.div>  
