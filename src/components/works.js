@@ -105,7 +105,7 @@ const Works = () => {
                     </li>
 
                     <li className="col-span-12 md:col-start-8 md:col-span-5 md:row-span-2 md:-mt-12 mb-12">
-                        <Link to="/">
+                        <Link to="/playground">
                         <animated.div
                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                             onMouseLeave={() => set({ xys: [0, 0, 1] })}

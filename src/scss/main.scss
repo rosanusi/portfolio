@@ -183,6 +183,7 @@ a:not(.rdwn-name) {
 
     &.small {
         max-width: 768px;
+        width: 100%;
         // margin: 0 auto;
     }
 
@@ -193,6 +194,23 @@ a:not(.rdwn-name) {
     }
 }
 
+
+.masonry-with-columns {
+    max-width: 1920px;
+}
+  .masonry-with-columns div {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    line-height: inherit;
+  }
+
+
+//   .masonry-with-columns div:nth-child(1) {
+
+//     line-height: 409px;
+//   }
 
 
 .rdwn-video-container {
@@ -209,26 +227,6 @@ a:not(.rdwn-name) {
         width: 100%;
     }
 }
-
-
-.rdwn-playground {
-    margin-top: 4em8em;
-
-    @media (max-width: 600px) { 
-        margin-top : 4em;
-    }
-    
-    p {
-        font-size : 2.2em;
-        line-height : 1.5;
-        
-        @media (max-width: 600px) { 
-            font-size : 1.5em;
-        }
-    
-    }
-}
-
 
 .rdwn-books-grid {
     line-height: 1.6;
