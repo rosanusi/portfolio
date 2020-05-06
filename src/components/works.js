@@ -115,7 +115,7 @@ const Works = () => {
 
                         <div className="md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Playground</h3>
-                                <small className="text-gray-600 text-base md:text-xl">Design graveyard and experiments</small>
+                                <small className="text-gray-600 text-base md:text-xl">Ideas, scraps and experiments</small>
                         </div>
                         </animated.div>
                         </Link>

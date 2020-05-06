@@ -4,7 +4,7 @@ import Header from '../components/header'
 import Footer from '../components/footer'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
-import Books from '../components/books'
+// import Books from '../components/books'
 // import Myself from '../video/meee.mp4'
 import {useSpring, animated} from 'react-spring'
 

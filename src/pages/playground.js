@@ -55,6 +55,9 @@ const Playground = (props) => {
             <animated.div className="my-12 md:my-24" style={workDetailsBlock}>
 
                 <div className="masonry-with-columns container mx-auto px-8 grid grid-cols-12 gap-6 md:gap-12">
+                <div className="col-span-12 md:col-span-6">
+                        <Img fluid={props.data.imageEleven.childImageSharp.fluid} />
+                    </div>
                     <div className="col-span-12 md:col-span-6">
                         <img src={attendee} alt="" />
                     </div>
@@ -171,6 +174,13 @@ export const pageQuery = graphql`
             }
         },
         imageTen: file(relativePath: { eq: "play/icons1.jpg" }) {
+            childImageSharp {
+                fluid(maxWidth: 2000){
+                ...GatsbyImageSharpFluid
+                }
+            }
+        },
+        imageEleven: file(relativePath: { eq: "play/cycle-icons.jpg" }) {
             childImageSharp {
                 fluid(maxWidth: 2000){
                 ...GatsbyImageSharpFluid

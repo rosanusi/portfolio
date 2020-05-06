@@ -31,7 +31,7 @@ const Footer = () => {
                   {/* <li><a href="https://www.instagram.com/busolasanusi/" rel="noopener noreferrer" target="_blank">Instagram</a></li> */}
               </ul>          
               <div className="copyright col-span-12 md:col-span-4 flex">
-                <span className="text-base md:text-xl text-gray-600 md:ml-auto">&copy; 2014 - 2020 ✌️</span>
+                <span className="text-base md:text-xl text-gray-600 md:ml-auto">&copy; 2014 - 2020 <span role="img" aria-label="peace-sign">✌️</span></span>
               </div>    
             </div>
           </div>
