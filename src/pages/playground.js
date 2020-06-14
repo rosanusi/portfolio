@@ -37,7 +37,6 @@ const Playground = (props) => {
             
             <Header />
 
-
             <animated.div className="" style={workTitleBlock}>
                 <div className="container mx-auto grid grid-cols-12 gap-4 px-8 md:mt-48 mt-24 md:mb-24">
                     <div className="col-start-1 col-span-12 md:col-start-4 md:col-span-7">
