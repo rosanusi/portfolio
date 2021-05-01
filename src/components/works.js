@@ -52,19 +52,19 @@ const Works = () => {
             <div className="container mx-auto">
                 <div className="grid grid-cols-12 gap-4 px-8 md:mb-20 mb-10">
                     <div className="sectionTitle md:col-start-2 md:col-span-4 col-start-1 col-span-9 text-xl md:text-2xl">
-                        <h2 className="">Some past works</h2>
+                        <h3 className="">Some past works</h3>
                         <small className="text-xl md:text-2xl text-gray-600">Design strategy, Research, Interaction design, prototyping.</small>
                     </div>
                 </div>
                 <ul className="grid grid-cols-12 gap-4 px-8 text-xl">
-                    <li className="col-span-12 md:col-span-6 mb-8">
+                    <li className="col-span-12 md:col-span-6 mb-8 imageContainer">
                         <Link to="/icflix/">
                         <animated.div
                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
                             style={{ transform: props.xys.interpolate(trans) }}
                         >
-                            <Img fluid={data.imageOne.childImageSharp.fluid} />
+                            <div className="imageContainer"><Img fluid={data.imageOne.childImageSharp.fluid} /></div>
                         <div className=" md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Icflix</h3>
                                 <small className="text-base md:text-xl text-gray-600">On-demand home service platform for Swiffix</small>
@@ -72,14 +72,14 @@ const Works = () => {
                         </animated.div>
                         </Link>
                     </li>
-                    <li className="col-span-12 md:col-start-8 md:col-span-5 md:-mt-24 mb-8">
+                    <li className="col-span-12 md:col-start-8 md:col-span-5 md:-mt-24 mb-8 imageContainer">
                         <Link to="/preferred/">
                         <animated.div
                             onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
                             style={{ transform: props.xys.interpolate(trans) }}
                         >
-                            <Img fluid={data.imageTwo.childImageSharp.fluid} />
+                            <div className="imageContainer"><Img fluid={data.imageTwo.childImageSharp.fluid} /></div>
                         <div className=" md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Booking.com</h3>
                             <small className="text-base md:text-xl text-gray-600">Program dashboard for Booking's exclusive partner program</small>
@@ -95,7 +95,7 @@ const Works = () => {
                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
                             style={{ transform: props.xys.interpolate(trans) }}
                         >
-                            <Img fluid={data.imageThree.childImageSharp.fluid} />
+                            <div className="imageContainer"><Img fluid={data.imageThree.childImageSharp.fluid} /></div>
                         <div className=" md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Swiffix</h3>
                                 <small className="rdwn-work-details text-base md:text-xl text-gray-600">Middle East Movie streaming platform</small>
@@ -111,7 +111,7 @@ const Works = () => {
                             onMouseLeave={() => set({ xys: [0, 0, 1] })}
                             style={{ transform: props.xys.interpolate(trans) }}
                         >
-                            <Img fluid={data.imageFour.childImageSharp.fluid} />
+                            <div className="imageContainer"><Img fluid={data.imageFour.childImageSharp.fluid} /></div>
 
                         <div className="md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Playground</h3>
