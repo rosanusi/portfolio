@@ -16,4 +16,5 @@
   },
   variants: {},
   plugins: [],
+  purge: false
 }

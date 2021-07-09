@@ -88,10 +88,20 @@ module.exports = {
           exclude: ["/preview/**", "/do-not-track/me/too/"],
         },
       },
+    },
+    {
+      resolve: 'gatsby-plugin-purgecss',
+      options: {
+        printRejected: false,
+        develop: false,
+        tailwind: true,
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+
+
   ],
 }
 
