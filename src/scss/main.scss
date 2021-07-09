@@ -1,6 +1,6 @@
 /**
  * @license
- * MyFonts Webfont Build ID 3873002, 2020-02-27T19:18:38-0500
+ * MyFonts Webfont Build ID 4080356, 2021-05-01T19:45:23-0400
  * 
  * The fonts listed in this notice are subject to the End User License
  * Agreement(s) entered into by the website owner. All other parties are 
@@ -8,64 +8,29 @@
  * 
  * You may obtain a valid license at the URLs below.
  * 
- * Webfont: TTNormsPro-Regular by TypeType
- * URL: https://www.myfonts.com/fonts/type-type/tt-norms/regular/
- * 
- * Webfont: TTNormsPro-Bold by TypeType
- * URL: https://www.myfonts.com/fonts/type-type/tt-norms/bold/
+ * Webfont: Approach-Rg by Emtype Foundry
+ * URL: https://www.myfonts.com/fonts/emtype/approach/regular/
+ * Copyright: Copyright (c) 2019 by Eduardo Manso. All rights reserved.
  * 
  * 
- * Licensed pageviews: 20,000
- * Webfonts copyright: Copyright (c) 2016-2019 by TypeType. Designers Ivan Gladkikh, Pavel Emelyanov. Technical designers Vika Usmanova, Olexa Volochay, Nadyr Rakhimov, Yuri Nakonechny. All rights reserved.
  * 
- * © 2020 MyFonts Inc
+ * © 2021 MyFonts Inc
 */
 
-
 /* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3b18ea");
-@import url("//hello.myfonts.net/count/3b18ea");
-
- 
-
+@import url("//hello.myfonts.net/count/3e42e4");
+  
 @font-face {
-    font-family: 'TTNormsPro-Regular';
-    src: url('../webfonts/3B18EA_0_0.eot');
-    src: url('../webfonts/3B18EA_0_0.eot?#iefix') format('embedded-opentype'),
-        url('../webfonts/3B18EA_0_0.woff2') format('woff2'),
-        url('../webfonts/3B18EA_0_0.woff') format('woff'),
-        url('../webfonts/3B18EA_0_0.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'TTNormsPro-Bold';
-    src: url('../webfonts/3B18EA_1_0.eot');
-    src: url('../webfonts/3B18EA_1_0.eot?#iefix') format('embedded-opentype'),
-        url('../webfonts/3B18EA_1_0.woff2') format('woff2'),
-        url('../webfonts/3B18EA_1_0.woff') format('woff'),
-        url('../webfonts/3B18EA_1_0.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'TTNormsPro-Regular';
-    src:url('../webfonts/3B18EA_0_unhinted_0.woff2') format('woff2'),
-        url('../webfonts/3B18EA_0_unhinted_0.woff') format('woff'),
-        url('../webfonts/3B18EA_0_unhinted_0.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'TTNormsPro-Bold';
-    src:url('../webfonts/3B18EA_1_unhinted_0.woff2') format('woff2'),
-        url('../webfonts/3B18EA_1_unhinted_0.woff') format('woff'),
-        url('../webfonts/3B18EA_1_unhinted_0.ttf') format('truetype');
+  font-family: "Approach-Rg";
+  src: url('../webfonts/font.woff2') format('woff2'), url('../webfonts/font.woff') format('woff');
 }
  
-
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;1,300;1,400&display=swap');
 
 // Color
-$body-color : #1a202c;
+$body-color : hsla(98, 0%, 3%, 1.00);
 $light-body-color: lighten( $body-color, 50% );
-$primary-color : #f4b253;
+$primary-color : hsla(20, 100%, 60%, 1);
 
 
 html {
@@ -74,21 +39,31 @@ html {
 
 
 body {
-    background-color: #f9f8f7;
-    font-family: 'TTNormsPro-Regular';
-    // font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: hsl(44, 29%, 98%);
+    font-family: "Newsreader", "Approach-Rg", "SF Pro Text", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $body-color;
     line-height: 1.5;
     -webkit-font-smoothing : antialiased;
 }
 
-h2 {
-    // font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-family: 'TTNormsPro-Regular';
-    color: #505050;
-    font-size: 38px;
-    line-height: 1.3;
-    // font-weight: 600;
-    letter-spacing: -.003em;
+
+p {
+    margin-bottom: 1.25em;
+    color: $body-color;
+}
+
+.logo {
+    width: 32px;
+}
+
+.hero-copy {
+    font-size: 1.35rem;
+    font-weight: 300;
+
+    .main {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
 }
 
 
@@ -178,6 +153,15 @@ a:not(.rdwn-name) {
         }
     }
 
+}
+
+
+.footNote {
+    
+    span {
+        color: hsla(98, 0%, 53%, 1);
+        font-size: 1em;
+    }
 }
 
 .imageContainer {
