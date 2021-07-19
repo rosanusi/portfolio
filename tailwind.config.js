@@ -15,6 +15,5 @@
       }
   },
   variants: {},
-  plugins: [],
-  purge: false
+  plugins: []
 }

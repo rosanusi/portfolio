@@ -67,7 +67,7 @@ const Works = () => {
                             <div className="imageContainer"><Img fluid={data.imageOne.childImageSharp.fluid} /></div>
                         <div className=" md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Icflix</h3>
-                                <small className="text-base md:text-xl text-gray-600">On-demand home service platform for Swiffix</small>
+                                <small className="text-base md:text-xl text-gray-600">Middle East Movie streaming platform</small>
                         </div>
                         </animated.div>
                         </Link>
@@ -98,7 +98,7 @@ const Works = () => {
                             <div className="imageContainer"><Img fluid={data.imageThree.childImageSharp.fluid} /></div>
                         <div className=" md:mt-8 mt-4 max-w-xs leading-tight">
                                 <h3 className="text-base md:text-xl">Swiffix</h3>
-                                <small className="rdwn-work-details text-base md:text-xl text-gray-600">Middle East Movie streaming platform</small>
+                                <small className="rdwn-work-details text-base md:text-xl text-gray-600">On-demand home service platform for Swiffix</small>
                         </div>
                         </animated.div>
                         </Link>
