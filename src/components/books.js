@@ -11,11 +11,6 @@ export default class books extends Component {
                 Culture Code
               </a> - Daniel Coyle
           </li>
-          <li>
-              <a href="https://www.goodreads.com/book/show/39330937-the-laws-of-human-nature" rel="noopener noreferrer" target="_blank">
-              Laws of Human Nature
-              </a> - Robert Greene
-          </li>
         </ul>
       </div>
     )
